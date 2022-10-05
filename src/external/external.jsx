@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
-import { WOW } from 'wow.js'
+import { WOW } from 'wowjs'
 import Aos from 'aos'
 const External = () => {
   useEffect(() => {
