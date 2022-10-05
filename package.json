@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jhonymiler.github.io/curriculum/",
+  "homepage": "https://jhonymiler.github.io",
   "scripts": {
     "predeploy": "vite build",
     "deploy": "gh-pages -d build -t",
