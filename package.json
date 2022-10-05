@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"https://jhonymiler.github.io/curriculum",
+  "homepage": "./",
   "scripts": {
     "predeploy": "vite build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -b main -d build -t",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -16,6 +16,7 @@
     "@tanstack/react-query-devtools": "^4.10.1",
     "aos": "^2.3.4",
     "axios": "^0.27.2",
+    "babel": "^6.23.0",
     "bootstrap": "^5.2.2",
     "classnames": "^2.3.2",
     "dotenv": "^16.0.3",
