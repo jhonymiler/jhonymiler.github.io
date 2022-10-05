@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="500" height="550" viewBox="0 0 500 550" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.3</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 250.48 275.55)"  >
+<g style=""   >
+		<g transform="matrix(1 0 0 1 0 0)"  >
+<linearGradient id="SVGID_19" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)"  x1="162.9883" y1="307.0126" x2="618.9883" y2="305.0126">
+<stop offset="0%" style="stop-color:rgb(108,0,247);stop-opacity: 1"/>
+<stop offset="23.880000000000003%" style="stop-color:rgb(125,0,248);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(178,0,252);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_19); fill-rule: nonzero; opacity: 1;"  transform=" translate(-393.86, -306)" d="M 393.857 35.952 L 160.378 170.273 v 271.103 l 233.479 134.672 l 233.128 -135.024 l 0.352 -270.751 L 393.857 35.952 z M 393.857 544.05 L 187.804 425.553 V 186.799 L 393.857 66.543 l 206.404 120.256 l 0.352 237.347 L 393.857 544.05 z" stroke-linecap="round" />
+</g>
+		<g transform="matrix(1 0 0 1 -97.4 -0.52)"  >
+<linearGradient id="SVGID_20" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 -296.46 -305.47)"  x1="162.9857" y1="306.4219" x2="618.9857" y2="304.4219">
+<stop offset="0%" style="stop-color:rgb(108,0,247);stop-opacity: 1"/>
+<stop offset="23.880000000000003%" style="stop-color:rgb(125,0,248);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(178,0,252);stop-opacity: 1"/>
+</linearGradient>
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_20); fill-rule: nonzero; opacity: 1;"  points="53.1,-145.4 52.04,145.75 -50.99,86.32 -51.34,16 -82.98,16 -82.98,104.61 82.98,199.2 82.98,-199.2 0.35,-151.73 0,-115.16 " />
+</g>
+		<g transform="matrix(1 0 0 1 96.87 -0.52)"  >
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(21,232,111); fill-rule: nonzero; opacity: 1;"  points="-83.16,199.2 -52.57,182.32 -52.57,-82.46 -10.72,58.37 51.16,-48.7 51.16,121.84 83.16,104.26 83.16,-102.85 55.73,-119.03 0,-22.33 -44.83,-177.75 -82.46,-199.2 " />
+</g>
+</g>
+</g>
+</svg>
