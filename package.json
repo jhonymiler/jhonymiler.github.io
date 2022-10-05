@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://curriculum-lnlzoy40m-jhonymiler.vercel.app",
+  "homepage": ".",
   "scripts": {
     "predeploy": "vite build",
     "deploy": "gh-pages -d build -t",
