@@ -1,12 +1,12 @@
 {
   "name": "react-curriculum",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "./",
+  "homepage": "http://curriculum-lnlzoy40m-jhonymiler.vercel.app",
   "scripts": {
     "predeploy": "vite build",
-    "deploy": "gh-pages -b main -d build -t",
+    "deploy": "gh-pages -d build -t",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
