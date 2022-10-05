@@ -4,11 +4,9 @@ import { useOffcanvas } from '@hooks'
 import Nav from './Nav'
 
 import { useHeader } from '../../data/Header'
-import { useQueryClient } from '@tanstack/react-query'
 
 export default function Header() {
   const { offcanvas, offcanvasHandler } = useOffcanvas()
-  const queryClient = useQueryClient()
 
   const { data } = useHeader()
   return (

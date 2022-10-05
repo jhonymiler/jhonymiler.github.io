@@ -6,7 +6,7 @@ const graphClient = new GraphQLClient(API_URL, {
   headers: {
     Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`
   }
-  //mode: 'cors'
+  // mode: 'cors'
 })
 
 // Pega a lista de menu e logos
