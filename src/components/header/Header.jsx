@@ -1,19 +1,21 @@
 import { useHeader } from '../../data/Header'
-
+import cn from 'classnames'
 import PopupMenu from '@components/header/popup-menu'
 import BurgerButton from '@ui/burger-button'
-import { useOffcanvas } from '@hooks'
+import { useSticky, useOffcanvas } from '@hooks'
 import Nav from './Nav'
+
+import {} from 'react-icons/fi'
 
 export default function Header() {
   const { data, isLoading } = useHeader()
-  console.log(isLoading)
+  const sticky = useSticky()
   const { offcanvas, offcanvasHandler } = useOffcanvas()
   return (
     <>
       {!isLoading ? (
         <>
-          <header className="rn-header haeder-default black-logo-version header--fixed header--sticky">
+          <header className={cn('rn-header haeder-default black-logo-version header--fixed header--sticky', sticky && 'sticky')}>
             <div className="header-wrapper rn-popup-mobile-menu m--0 row align-items-center">
               <div className="col-lg-2 col-6">
                 <div className="header-left">
@@ -29,9 +31,9 @@ export default function Header() {
                   <nav id="sideNav" className="mainmenu-nav navbar-example2 d-none d-xl-block">
                     <Nav menus={data.headers} />
                   </nav>
-                  <div className="header-right">
-                    <a className="rn-btn" target="_blank" href="#">
-                      <span>Wallet</span>
+                  <div className="button-group header-right">
+                    <a className="rn-btn border-button btn-small" target="_blank" href="#">
+                      <span>Login Wallet</span>
                     </a>
 
                     <BurgerButton onClick={offcanvasHandler} />

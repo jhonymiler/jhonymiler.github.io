@@ -23,7 +23,7 @@
       box-shadow: var(--shadow-1);
       img {
         border: none !important;
-        max-height: 23px !important;
+        max-height: 33px !important;
         top: 0 !important;
       }
     }
@@ -124,7 +124,7 @@
 
         span {
           span {
-            color: #ff014f;
+            color: rgb(21,232,111);
           }
         }
 
@@ -315,7 +315,7 @@
         box-shadow: var(--shadow-1);
 
         img {
-          max-height: 23px;
+          max-height: 33px;
           width: auto;
         }
       }
@@ -519,17 +519,18 @@
             .user {
               position: relative;
               z-index: 1;
-              width: 40px;
-              height: 40px;
+              width: 180px;
+              height: 180px;
               margin-bottom: 20px;
 
-              svg {
-                width: 22px;
-                height: auto;
+              img {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                left: 50%;
+                top: 50%;
                 position: relative;
                 color: #ffffff;
-                top: 37%;
-                left: 50%;
                 transform: translate(-50%, -50%);
               }
 
@@ -537,11 +538,11 @@
                 content: '';
                 position: absolute;
                 transition: var(--transition);
-                width: 40px;
-                height: 40px;
+                width: 160px;
+                height: 160px;
                 border-radius: 50%;
-                top: 0;
-                left: 0;
+                top: 10px;
+                left: 10px;
                 background: var(--color-primary);
                 opacity: 0.7;
                 z-index: -1;
@@ -551,8 +552,8 @@
                 content: '';
                 position: absolute;
                 transition: var(--transition);
-                width: 60px;
-                height: 60px;
+                width: 180px;
+                height: 180px;
                 border-radius: 50%;
                 top: 50%;
                 left: 50%;
@@ -829,7 +830,7 @@
       }
 
       span {
-        color: #ff014f;
+        color: rgb(21,232,111);
 
         @media #{$large-mobile} {
           font-size: 32px;

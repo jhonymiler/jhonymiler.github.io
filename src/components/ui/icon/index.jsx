@@ -1,6 +1,4 @@
-import React from 'react'
 import { Loader } from 'react-feather'
-import PropTypes from 'prop-types'
 import cn from 'classnames'
 import { useDynamicIconImport } from '@hooks'
 
@@ -19,12 +17,6 @@ const Icon = ({ name, onError, className, ...rest }) => {
     return <SvgIcon className={cn(className)} {...rest} />
   }
   return null
-}
-
-Icon.propTypes = {
-  name: PropTypes.string.isRequired,
-  onError: PropTypes.func,
-  className: PropTypes.string
 }
 
 export default Icon

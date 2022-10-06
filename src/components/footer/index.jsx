@@ -1,115 +1,67 @@
+import { FaEthereum, FaReact, SiCss3, SiGraphql, SiHtml5, SiJavascript, SiSolidity, SiWeb3Dotjs } from 'react-icons/all'
+
 export default function Footer() {
   return (
-    <div id="footer" className="rn-footer-area footer-style-2 rn-section-gapTop section-separator">
-      <div className="container pb--80 pb_sm--40 plr_sm--20">
-        <div className="row">
-          <div className="col-xl-3 col-12 col-lg-3 col-md-6 col-sm-6 col-12">
-            <div className="logo-thumbnail">
-              <a href="#">
-                <img src="/images/logo/logo.png" alt="logo-image" />
-              </a>
-            </div>
-            <div className="social-icone-wrapper">
-              <ul className="social-share d-flex liststyle">
-                <li className="facebook">
-                  <a href="#">
-                    <i data-feather="linkedin"></i>
-                  </a>
-                </li>
-                <li className="instagram">
-                  <a href="#">
-                    <i data-feather="instagram"></i>
-                  </a>
-                </li>
-                <li className="linkedin">
-                  <a href="#">
-                    <i data-feather="twitter"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-sl-3 col-12 mt_sm--20 col-lg-3 col-md-6 col-sm-6 col-12">
-            <div className="menu-wrapper">
-              <div className="menu-title">
-                <h6>product</h6>
+    <div class="rn-footer-area rn-section-gap section-separator">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-area text-center">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true" class="social-share-style-1 text-center single-page-icone mt--40 aos-init aos-animate">
+                <ul class="social-share justify-content-center d-flex liststyle">
+                  <li>
+                    <a class="circle only-border color" href="#" title="ReactJS">
+                      <FaReact size={24} />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="circle only-border" href="#" title="GraphQl">
+                      <SiGraphql stroke="1" size={24} />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="circle only-border" href="#" title="WEB3">
+                      <SiWeb3Dotjs stroke="1" size={24} />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="circle only-border" href="#" title="JavaScript">
+                      <SiJavascript stroke="1" size={24} />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="circle only-border" href="#" title="HTML 5">
+                      <SiHtml5 stroke="1" size={24} />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="circle only-border" href="#" title="CSS 3">
+                      <SiCss3 stroke="1" size={24} />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="circle only-border" href="#" title="Blockchain Ethereum">
+                      <FaEthereum stroke="1" size={24} />
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="circle only-border" href="#" title="Solidity SmartContract">
+                      <SiSolidity stroke="1" size={24} />
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul className="menu-footer">
-                <li>
-                  <a href="#">Database</a>
-                </li>
-                <li>
-                  <a href="#">Authentication</a>
-                </li>
-                <li>
-                  <a href="#">Storage</a>
-                </li>
-                <li>
-                  <a href="#">Support</a>
-                </li>
-                <li>
-                  <a href="#">Pricing</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-sl-3 col-12 mt_sm--20 col-lg-3 col-md-6 col-sm-6 col-12">
-            <div className="menu-wrapper">
-              <div className="menu-title">
-                <h6>Resources</h6>
-              </div>
-              <ul className="menu-footer">
-                <li>
-                  <a href="#">Authentication</a>
-                </li>
-                <li>
-                  <a href="#">System Status</a>
-                </li>
-                <li>
-                  <a href="#">Terms of service</a>
-                </li>
-                <li>
-                  <a href="#">Pricing</a>
-                </li>
-                <li>
-                  <a href="#">over right</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-sl-3 col-12 mt_sm--20 col-lg-3 col-md-6 col-sm-6 col-12">
-            <div className="menu-wrapper">
-              <div className="menu-title">
-                <h6>Developers</h6>
-              </div>
-              <ul className="menu-footer">
-                <li>
-                  <a href="#">Documentation</a>
-                </li>
-                <li>
-                  <a href="#">Authentication</a>
-                </li>
-                <li>
-                  <a href="#">API Reference</a>
-                </li>
-                <li>
-                  <a href="#">Support</a>
-                </li>
-                <li>
-                  <a href="#">Open Source</a>
-                </li>
-              </ul>
+
+              <p
+                class="description mt
+              -30"
+              >
+                Tecnologias utilizadas nesta página.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <div className="copyright text-center ptb--40 section-separator">
-        <p className="description">
-          © 2021. All rights reserved by{' '}
-          <a target="_blank" href="https://themeforest.net/user/rainbow-themes/portfolio">
-            Rainbow-Themes.
-          </a>
-        </p>
       </div>
     </div>
   )

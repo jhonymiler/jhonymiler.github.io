@@ -32,6 +32,7 @@
     "react-parallax": "^3.5.1",
     "react-scroll": "^1.8.7",
     "react-slick": "^0.29.0",
+    "react-typed": "^1.2.0",
     "react-url-loader": "^0.0.3",
     "react-visibility-sensor": "^5.1.1",
     "wow.js": "^1.2.2"

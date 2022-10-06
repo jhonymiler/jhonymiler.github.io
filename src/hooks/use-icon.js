@@ -11,7 +11,7 @@ function useDynamicIconImport(name, options = {}) {
     setLoading(true)
     const importIcon = async () => {
       try {
-        ImportedIconRef.current = await import('react-feather').then((icon) => icon[name])
+        ImportedIconRef.current = await import('react-icons/all').then((icon) => icon[name])
       } catch (err) {
         if (onError) {
           onError(err)

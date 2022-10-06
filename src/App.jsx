@@ -8,14 +8,18 @@ import ScrollToTop from '@components/ui/scroll-to-top'
 import '@assets/css/bootstrap.min.css'
 import '@assets/scss/style.scss'
 import Client from './external/client'
+import Footer from './components/footer'
+import Apresentacao from './components/apresentacao'
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Header />
       <main className="main-page-wrapper">
+        <Apresentacao />
         <ScrollToTop />
       </main>
+      <Footer />
       <Client />
       <ReactQueryDevtools initialIsOpen={true} />
     </QueryClientProvider>
