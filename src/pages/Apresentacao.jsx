@@ -5,60 +5,10 @@ import Button from '@ui/button'
 import Typed from 'react-typed'
 import Social, { SocialLink } from '@ui/social'
 
-const data = {
-  id: 'developer-home-hero',
-  section: 'hero-section',
-  headings: [
-    {
-      content: 'Hi, I’m <span>InBio</span>'
-    },
-    {
-      content: 'Download my curriculum vitae:'
-    }
-  ],
-  texts: [
-    {
-      content: 'Web designer and developer working for envato.com in Paris, France.'
-    }
-  ],
-  items: [
-    {
-      id: 1,
-      title: '35 Anos',
-      icon: 'FiSunrise'
-    },
-    {
-      id: 2,
-      title: 'jonatasmiler@gmail.com',
-      icon: 'GrMail'
-    },
-    {
-      id: 3,
-      title: 'Piracicaba/SP - Brasil',
-      icon: 'RiMapPinFill'
-    }
-  ],
-  buttons: [
-    {
-      id: 1,
-      path: '../documentos/CURRICULUM - 19-07-2022.pdf',
-      content: 'DOWNLOAD CV'
-    },
-    {
-      id: 2,
-      path: '#contacts',
-      content: 'CONTACTE ME'
-    }
-  ],
-  images: [
-    {
-      src: '../images/slider/banner-02.png',
-      alt: 'Personal Portfolio Images'
-    }
-  ]
-}
 
-const data2 = {
+const page = {
+  id: 'developer-home-hero',
+
   headings: [
     {
       content: 'BENVINDO AO MEU MUNDO'
@@ -71,7 +21,7 @@ const data2 = {
   texts: [
     {
       content:
-        'Autodidata, comecei na programação de maneira profissional em <b style="color: rgb(21,232,111);">2008</b> onde fui Co-fundador da <b>OfficeWeb Soluções em Internet</b> no desenvolvimento de web sites e sistemas de gestão para web. Hoje trabalho com diversas tecnologias, entre elas, algumas listadas abaixo. Tendo como linguagem mais forte o PHP.'
+        'Autodipage, comecei na programação de maneira profissional em <b style="color: rgb(21,232,111);">2008</b> onde fui Co-fundador da <b>OfficeWeb Soluções em Internet</b> no desenvolvimento de web sites e sistemas de gestão para web. Hoje trabalho com diversas tecnologias, entre elas, algumas listadas abaixo. Tendo como linguagem mais forte o PHP.'
     }
   ],
   socials: [
@@ -136,12 +86,35 @@ const data2 = {
       }
     }
   ],
-  images: [
+  items: [
     {
-      src: '../images/slider/banner-01.png',
-      alt: 'Personal Portfolio Images'
+      id: 1,
+      title: '35 Anos',
+      icon: 'FiSunrise'
+    },
+    {
+      id: 2,
+      title: 'jonatasmiler@gmail.com',
+      icon: 'GrMail'
+    },
+    {
+      id: 3,
+      title: 'Piracicaba/SP - Brasil',
+      icon: 'RiMapPinFill'
     }
-  ]
+  ],
+  buttons: [
+    {
+      id: 1,
+      path: '../documentos/CURRICULUM - 19-07-2022.pdf',
+      content: 'DOWNLOAD CV'
+    },
+    {
+      id: 2,
+      path: '#contacts',
+      content: 'CONTACTE ME'
+    }
+  ],
 }
 export default function Apresentacao() {
   return (
@@ -154,32 +127,32 @@ export default function Apresentacao() {
                 <div className="row">
                   <div className="content mt--0">
                     <div className="inner mb--30">
-                      {data2?.headings?.[0] && <span className="subtitle">{data2.headings[0].content}</span>}
+                      {page?.headings?.[0] && <span className="subtitle">{page.headings[0].content}</span>}
 
-                      {data2?.headings?.[1] && (
+                      {page?.headings?.[1] && (
                         <h2 className="title">
                           <span
                             className="title-main"
                             dangerouslySetInnerHTML={{
-                              __html: data2.headings[1].content
+                              __html: page.headings[1].content
                             }}
                           />
                           <br />
-                          {data2?.animated_texts && (
+                          {page?.animated_texts && (
                             <span className="header-caption" id="page-top">
                               <span className="cd-headline clip is-full-width">
-                                <span>um </span> <Typed className="animated-texts" strings={data2.animated_texts} typeSpeed={50} backSpeed={50} backDelay={1} loop smartBackspace />
+                                <span>um </span> <Typed className="animated-texts" strings={page.animated_texts} typeSpeed={50} backSpeed={50} backDelay={1} loop smartBackspace />
                               </span>
                             </span>
                           )}
                         </h2>
                       )}
-                      {data2?.texts?.[0] && (
+                      {page?.texts?.[0] && (
                         <div>
                           <p
                             className="description"
                             dangerouslySetInnerHTML={{
-                              __html: data2.texts[0].content
+                              __html: page.texts[0].content
                             }}
                           />
                         </div>
@@ -187,11 +160,11 @@ export default function Apresentacao() {
                     </div>
                     <div className="row">
                       <div className="col-lg-4 col-xl-4 col-md-4 col-sm-4 col-12">
-                        {data2?.socials && (
+                        {page?.socials && (
                           <div className="social-share-inner-left">
                             <span className="title">Encontre-me </span>
                             <Social>
-                              {data2.socials.map((social) => (
+                              {page.socials.map((social) => (
                                 <SocialLink key={social.id} path={social.path}>
                                   <Icon stroke={1} size={24} name={social.icon} title={social.title} />
                                 </SocialLink>
@@ -201,11 +174,11 @@ export default function Apresentacao() {
                         )}
                       </div>
                       <div className="col-lg-8 col-xl-8 col-md-8 col-sm-8 col-12 mt_mobile--30">
-                        {data2?.skills && (
+                        {page?.skills && (
                           <div className="skill-share-inner">
                             <span className="title">Melhores Skills</span>
                             <ul className="skill-share d-flex liststyle">
-                              {data2.skills.map((skill) => (
+                              {page.skills.map((skill) => (
                                 <li>
                                   <Image key={skill.id} src={skill.image.src} title={skill.image.alt || 'skill'} />
                                 </li>
@@ -225,9 +198,9 @@ export default function Apresentacao() {
                   <div className="col-xl-12 col-lg-12 col-12">
                     <div className="user-info-top">
                       <div className="user-info-header d-flex justify-content-between">
-                        {data?.items && (
+                        {page?.items && (
                           <div className="user-info-footer">
-                            {data.items.map((item) => (
+                            {page.items.map((item) => (
                               <div key={item.id} className="info">
                                 <Icon size={24} name={item.icon} />
                                 {item?.title && <span>{item.title}</span>}
@@ -244,9 +217,9 @@ export default function Apresentacao() {
 
                   <div className="col-xl-12 col-lg-12 col-12">
                     <div className="user-info-bottom">
-                      {data?.headings?.[1] && <span>{data.headings[1]?.content}</span>}
+                      {page?.headings?.[1] && <span>{page.headings[1]?.content}</span>}
                       <div className="button-wrapper d-flex">
-                        {data?.buttons?.map(({ id, path, content }, i) => (
+                        {page?.buttons?.map(({ id, path, content }, i) => (
                           <Button key={id} className={i === 0 ? 'mr--30' : ''} path={path}>
                             <span>{content}</span>
                           </Button>
