@@ -27,7 +27,7 @@ const ContactForm = ({ className, setShow }) => {
       status: { ok, msg }
     })
     if (ok) {
-      //form.reset()
+      form.reset()
     }
   }
   const onSubmit = async (data, e) => {
