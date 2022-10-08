@@ -30,13 +30,13 @@ const ContactForm = ({ className, setShow }) => {
       //form.reset()
     }
   }
-  const onSubmit = (data, e) => {
-    recaptchaRef.current.execute()
+  const onSubmit = async (data, e) => {
+    const token = await recaptchaRef.current.executeAsync()
 
     const form = e.target
     setServerState({ submitting: true })
     try {
-      axios.post(`https://discord.com/api/webhooks/${import.meta.env.VITE_NUM_CHANEL_DISCORD}/${import.meta.env.VITE_TOKEN_DISCORD}`, {
+      await axios.post(`https://discord.com/api/webhooks/${import.meta.env.VITE_NUM_CHANEL_DISCORD}/${import.meta.env.VITE_TOKEN_DISCORD}`, {
         username: data.nome,
         embeds: [
           {
@@ -151,7 +151,7 @@ const ContactForm = ({ className, setShow }) => {
           </div>
 
           <div className="col-lg-12">
-            <ReCAPTCHA ref={recaptchaRef} sitekey="6LcmP2QiAAAAAFPXNac_qhxdb2F8Do544qOmPp6f" onSubmit={onSubmit} />
+            <ReCAPTCHA ref={recaptchaRef} sitekey="6LeXVmQiAAAAAL4v9DigMu1qQKD_JjdPJSjMf__i" size="invisible" />
             <Button
               onClick={() => {
                 setShow(false)
