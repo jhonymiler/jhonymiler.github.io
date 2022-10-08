@@ -5,7 +5,6 @@ import Button from '@ui/button'
 import Typed from 'react-typed'
 import Social, { SocialLink } from '@ui/social'
 
-
 const page = {
   id: 'developer-home-hero',
 
@@ -114,7 +113,7 @@ const page = {
       path: '#contacts',
       content: 'CONTACTE ME'
     }
-  ],
+  ]
 }
 export default function Apresentacao() {
   return (
@@ -217,7 +216,6 @@ export default function Apresentacao() {
 
                   <div className="col-xl-12 col-lg-12 col-12">
                     <div className="user-info-bottom">
-                      {page?.headings?.[1] && <span>{page.headings[1]?.content}</span>}
                       <div className="button-wrapper d-flex">
                         {page?.buttons?.map(({ id, path, content }, i) => (
                           <Button key={id} className={i === 0 ? 'mr--30' : ''} path={path}>
