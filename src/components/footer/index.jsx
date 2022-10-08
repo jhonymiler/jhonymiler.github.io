@@ -2,51 +2,51 @@ import { FaEthereum, FaReact, SiCss3, SiGraphql, SiHtml5, SiJavascript, SiSolidi
 
 export default function Footer() {
   return (
-    <div class="rn-footer-area rn-section-gap section-separator">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="footer-area text-center">
-              <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true" class="social-share-style-1 text-center single-page-icone mt--40 aos-init aos-animate">
-                <ul class="social-share justify-content-center d-flex liststyle">
+    <div className="rn-footer-area rn-section-gap section-separator">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="footer-area text-center">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true" className="social-share-style-1 text-center single-page-icone mt--40 aos-init aos-animate">
+                <ul className="social-share justify-content-center d-flex liststyle">
                   <li>
-                    <a class="circle only-border color" href="#" title="ReactJS">
+                    <a className="circle only-border color" href="#" title="ReactJS">
                       <FaReact size={24} />
                     </a>
                   </li>
                   <li>
-                    <a class="circle only-border" href="#" title="GraphQl">
+                    <a className="circle only-border" href="#" title="GraphQl">
                       <SiGraphql stroke="1" size={24} />
                     </a>
                   </li>
                   <li>
-                    <a class="circle only-border" href="#" title="WEB3">
+                    <a className="circle only-border" href="#" title="WEB3">
                       <SiWeb3Dotjs stroke="1" size={24} />
                     </a>
                   </li>
                   <li>
-                    <a class="circle only-border" href="#" title="JavaScript">
+                    <a className="circle only-border" href="#" title="JavaScript">
                       <SiJavascript stroke="1" size={24} />
                     </a>
                   </li>
                   <li>
-                    <a class="circle only-border" href="#" title="HTML 5">
+                    <a className="circle only-border" href="#" title="HTML 5">
                       <SiHtml5 stroke="1" size={24} />
                     </a>
                   </li>
                   <li>
-                    <a class="circle only-border" href="#" title="CSS 3">
+                    <a className="circle only-border" href="#" title="CSS 3">
                       <SiCss3 stroke="1" size={24} />
                     </a>
                   </li>
                   <li>
-                    <a class="circle only-border" href="#" title="Blockchain Ethereum">
+                    <a className="circle only-border" href="#" title="Blockchain Ethereum">
                       <FaEthereum stroke="1" size={24} />
                     </a>
                   </li>
 
                   <li>
-                    <a class="circle only-border" href="#" title="Solidity SmartContract">
+                    <a className="circle only-border" href="#" title="Solidity SmartContract">
                       <SiSolidity stroke="1" size={24} />
                     </a>
                   </li>
@@ -54,7 +54,7 @@ export default function Footer() {
               </div>
 
               <p
-                class="description mt
+                className="description mt
               -30"
               >
                 Tecnologias utilizadas nesta página.

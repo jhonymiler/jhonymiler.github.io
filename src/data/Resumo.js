@@ -434,7 +434,7 @@ const Resumo = [
             subtitle: 'Udemy (2021)',
             rating: '2021',
             description:
-              'Códigos de exames da microsoft aprendidos neste curso:<br> 70-761: Querying Data with Transact-SQL. <br> 70-762: Developing SQL Databases<br> 70-764: <aintaning SQL Databases'
+              'Códigos de exames da microsoft aprendidos neste curso:<br> 70-761: Querying Data with Transact-SQL. <br> 70-762: Developing SQL Databases<br> 70-764: Maintaning SQL Databases.'
           }
         ]
       }
