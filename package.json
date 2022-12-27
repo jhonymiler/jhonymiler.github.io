@@ -1,6 +1,6 @@
 {
   "name": "react-curriculum",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://jhonymiler.github.io",
@@ -22,6 +22,7 @@
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
     "install": "^0.13.0",
+    "install-peerdeps": "^3.0.3",
     "npm": "^8.19.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",

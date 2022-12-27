@@ -9,12 +9,10 @@ import {} from 'react-icons/fi'
 import ContatoModal from '../modal/contato'
 import { useState } from 'react'
 
-export default function Header() {
+export default function Header({ show, setShow }) {
   const { data, isLoading } = useHeader()
   const sticky = useSticky()
   const { offcanvas, offcanvasHandler } = useOffcanvas()
-
-  const [show, setShow] = useState(false)
 
   return (
     <>
@@ -48,7 +46,7 @@ export default function Header() {
             </div>
           </header>
           <PopupMenu isOpen={offcanvas} onClick={offcanvasHandler} setShow={setShow} menus={data.headers} logo={data.logos[1].url} />
-          <ContatoModal show={show} setShow={setShow} title="Contate Me" content='' />
+          <ContatoModal show={show} setShow={setShow} title="Contate Me" content="" />
         </>
       ) : (
         <div className="w-100 h-100 position-absolute d-flex">

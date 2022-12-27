@@ -21,6 +21,50 @@ const Resumo = [
         items: [
           {
             id: 1,
+            title: 'Governo Federal',
+            subtitle: 'Ministério do Desenvolvimento',
+            rating: '2022',
+            description:
+              'Criação de funcionalidades e manutenção nos sistemas do MDR como  <a href="https://apps.mdr.gov.br/selesan/web/index.php" target="_blank">SELESAN</a> ,' +
+              '<a href="https://apps.mdr.gov.br/selemob/app/web/index.php" target="_blank">SELEMOB</a> ' +
+              ' e <a href="http://antigo.snis.gov.br/o-que-e?view=category&id=70" target="_blank">SINISA</a> em <span class="color-neon">PHP</span> com implementações do ' +
+              '<a href="https://www.gov.br/pt-br" target="_blank">GOV.br</a>.'
+          },
+          {
+            id: 2,
+            title: 'Gestor de Documentos Fiscais',
+            subtitle: 'GRUPO ARO DE CONTABILIDADE',
+            rating: '2022',
+            description:
+              'Contrução de um sistema semelhante ao site <a href="https://arquivei.com.br" target="_blank">arquivei.com.br</a> ao <a href="https://sieg.com" target="_blank">SIEG.com</a> para baixar e gerenciar documentos fiscais. Criamos o sistema em <span class="color-neon">Laravel</span> utilizando os melhores recursos e patterns disponíveis da ferramenta como por exemplo, Observers, Task Scheduling, Queues e etc. Utilizamos banco de dados <span class="color-neon">Postgres</span> e serviços de background em <span class="color-neon">Python</span>. '
+          },
+          {
+            id: 3,
+            title: 'Entrega Continua',
+            subtitle: 'ACX EXPERIENCE',
+            rating: '2022',
+            description:
+              'Em todos estes projetos, criei toda a integração via GitHub e posteriormente em Bitbucket. Os pipelines para deploy e envio para a produção no servidor, bem como a integração das tarefas do Jira com o VSCode da equipe para que ao terminar uma tarefa a mesma fosse imediatamente apontada na plataforma Jira.'
+          },
+          {
+            id: 4,
+            title: 'Baixa de CF-e`s',
+            subtitle: 'ACX EXPERIENCE',
+            rating: '2022',
+            description:
+              'Criação de automação em <span class="color-neon">Python</span> para recuperar 4 Milhões de arquivos SAT para uma rede de supermercados. O sistema é um projeto pessoal cujo serviço pode ser solicitado diretamente a mim caso precise recuperar arquivos fiscais perdidos.'
+          }
+        ]
+      },
+      {
+        id: 'default-home-section-right',
+        section_title: {
+          title: '',
+          subtitle: ''
+        },
+        items: [
+          {
+            id: 1,
             title: 'Projeto ERP Web',
             subtitle: 'GRUPO ARO DE CONTABILIDADE',
             rating: '2021',
@@ -42,39 +86,6 @@ const Resumo = [
             rating: '2021',
             description:
               'Criei uma integração com o ERP de Gestão Industrial da empresa para exibir gráficos analíticos diversos e dinâmicos. Para isso foi usado <span class="color-neon">PHP</span> e <span class="color-neon">JQuery</span> com cadastro de consultas <span class="color-neon">SQL Server</span> para que o consultor pudesse criar suas prórpias consultas e que os gráficos fossem montados dinamicamente.'
-          }
-        ]
-      },
-      {
-        id: 'default-home-section-right',
-        section_title: {
-          title: '',
-          subtitle: ''
-        },
-        items: [
-          {
-            id: 1,
-            title: 'Gestor de Documentos Fiscais',
-            subtitle: 'GRUPO ARO DE CONTABILIDADE',
-            rating: '2022',
-            description:
-              'Contrução de um sistema semelhante ao site <a href="https://arquivei.com.br" target="_blank">arquivei.com.br</a> ao <a href="https://sieg.com" target="_blank">SIEG.com</a> para baixar e gerenciar documentos fiscais. Criamos o sistema em <span class="color-neon">Laravel</span> utilizando os melhores recursos e patterns disponíveis da ferramenta como por exemplo, Observers, Task Scheduling, Queues e etc. Utilizamos banco de dados <span class="color-neon">Postgres</span> e serviços de background em <span class="color-neon">Python</span>. '
-          },
-          {
-            id: 2,
-            title: 'Entrega Continua',
-            subtitle: 'ACX EXPERIENCE',
-            rating: '2022',
-            description:
-              'Em todos estes projetos, criei toda a integração via GitHub e posteriormente em Bitbucket. Os pipelines para deploy e envio para a produção no servidor, bem como a integração das tarefas do Jira com o VSCode da equipe para que ao terminar uma tarefa a mesma fosse imediatamente apontada na plataforma Jira.'
-          },
-          {
-            id: 3,
-            title: 'Baixa de CF-e`s',
-            subtitle: 'ACX EXPERIENCE',
-            rating: '2022',
-            description:
-              'Criação de automação em <span class="color-neon">Python</span> para recuperar 4 Milhões de arquivos SAT para uma rede de supermercados. O sistema é um projeto pessoal cujo serviço pode ser solicitado diretamente a mim caso precise recuperar arquivos fiscais perdidos.'
           }
         ]
       }
@@ -309,7 +320,14 @@ const Resumo = [
         },
         items: [
           {
-            id: 4,
+            id: 1,
+            title: 'Rancher e Kubernete',
+            subtitle: 'Full Cycle',
+            rating: '',
+            description: 'Criação de esteiras de produção para o <span class="color-neon">Ministério do Desenvolvimento</span> ' + 'utilizando técnicas DevOps com Kubernete'
+          },
+          {
+            id: 2,
             title: 'Desafio SigmaGeek',
             subtitle: '',
             rating: '',
@@ -318,7 +336,7 @@ const Resumo = [
           },
 
           {
-            id: 1,
+            id: 3,
             title: 'Repositórios e Versionamento',
             subtitle: '',
             rating: '',
@@ -327,7 +345,7 @@ const Resumo = [
           },
 
           {
-            id: 2,
+            id: 4,
             title: 'Metodologias Aágeis',
             subtitle: '',
             rating: '',
@@ -335,7 +353,7 @@ const Resumo = [
               'Criação de automações na plataforma <span class="color-neon">Jira</span> para gerenciar as tarefas e integração com as ferramentas de trabalho da equipe como VSCode e repositórios como <span class="color-neon">BitBucket</span> e <span class="color-neon">GitHub</span>. <br> Trabalhos realizados com metedologia <span class="color-neon">Scrum</span> e <span class="color-neon">Git Flow</span> como gerenciamento de Branches'
           },
           {
-            id: 3,
+            id: 5,
             title: 'Montagem de Servidor Linux',
             subtitle: '',
             rating: '',
@@ -387,29 +405,36 @@ const Resumo = [
         id: 'education-section-left',
         section_title: {
           title: 'Formações',
-          subtitle: '2004 - 2022'
+          subtitle: '2004 - 2023'
         },
         items: [
           {
             id: 1,
+            title: 'Análise e Desenvolvimento de Sistemas',
+            subtitle: 'Faculdade Anhanguera',
+            rating: 'Cursando',
+            description: ''
+          },
+          {
+            id: 2,
             title: 'Técnico Florestal, Meio Ambiente E Tecnologias Comerciais',
             subtitle: 'Centro Paula SouzaCentro Paula Souza (2008 - 2010)',
             rating: '2010',
             description: 'Formação técnica em agroflorestas e meio ambiente.'
           },
           {
-            id: 2,
+            id: 3,
             title: 'Ténico em Açucar e Alcool',
             subtitle: 'Centro Paula SouzaCentro Paula Souza (2008 - 2010)',
             rating: '2010',
             description: 'Trabalhos com tecnologias químicas mais voltada para usinas açucareiras, porém com o foco em produção química.'
           },
           {
-            id: 3,
+            id: 4,
             title: 'Ensino Médio',
             subtitle: 'E.E Coronel João Cruz',
             rating: '2004',
-            description: 'If you are going to use a passage. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.'
+            description: ''
           }
         ]
       },
@@ -421,20 +446,20 @@ const Resumo = [
         },
         items: [
           {
-            id: 1,
-            title: 'Autodidata em tudo o mais.',
-            subtitle: 'Internet das coisas)',
-            rating: '2001+',
-            description:
-              'Sempre fui muito curioso e busquei conhecimentos sozinho. Acabei me especializando em programação web na experiência e na pratica sempre estudando as novidades e aprendendo com o rio de informação especializada na internet e aplicando em meus projetos.'
-          },
-          {
             id: 2,
             title: 'Formação DBA SqlServer 2019, Desenvolvedor Banco de Dados',
             subtitle: 'Udemy (2021)',
             rating: '2021',
             description:
               'Códigos de exames da microsoft aprendidos neste curso:<br> 70-761: Querying Data with Transact-SQL. <br> 70-762: Developing SQL Databases<br> 70-764: Maintaning SQL Databases.'
+          },
+          {
+            id: 1,
+            title: 'Autodidata em tudo o mais.',
+            subtitle: 'Internet das coisas)',
+            rating: '2001+',
+            description:
+              'Sempre fui muito curioso e busquei conhecimentos sozinho. Acabei me especializando em programação web na experiência e na pratica sempre estudando as novidades e aprendendo com o rio de informação especializada na internet e aplicando em meus projetos.'
           }
         ]
       }

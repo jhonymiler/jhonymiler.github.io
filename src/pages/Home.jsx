@@ -13,15 +13,17 @@ import SkillArea from './SkillArea'
 import ExperienciasArea from './ExperienciasArea'
 import InterviewArea from './InterviewArea'
 import dataResumo from '../data/Resumo'
+import { useState } from 'react'
 
 function Home() {
   const content = normalizedData(dataResumo || [])
+  const [show, setShow] = useState(false)
 
   return (
     <>
-      <Header />
+      <Header show={show} setShow={setShow} />
       <main className="main-page-wrapper">
-        <Apresentacao />
+        <Apresentacao show={show} setShow={setShow} />
         <ResumoArea data={content['resume-section']}>
           <ExperienciasArea data={content['experience-section']} />
           <SkillArea data={content['skill-section']} />

@@ -1,5 +1,4 @@
 import { Image } from 'react-bootstrap'
-import { User } from 'react-feather'
 import Icon from '@ui/icon'
 import Button from '@ui/button'
 import Typed from 'react-typed'
@@ -115,7 +114,7 @@ const page = {
     }
   ]
 }
-export default function Apresentacao() {
+export default function Apresentacao({ show, setShow }) {
   return (
     <div id="developer-home-hero" className="rn-slide-area">
       <div className="slide slider-style-3 ">
@@ -217,11 +216,13 @@ export default function Apresentacao() {
                   <div className="col-xl-12 col-lg-12 col-12">
                     <div className="user-info-bottom">
                       <div className="button-wrapper d-flex">
-                        {page?.buttons?.map(({ id, path, content }, i) => (
-                          <Button key={id} className={i === 0 ? 'mr--30' : ''} path={path}>
-                            <span>{content}</span>
-                          </Button>
-                        ))}
+                        <Button className="mr--30" path="../documentos/CURRICULUM - 19-07-2022.pdf">
+                          <span>DOWNLOAD CV</span>
+                        </Button>
+
+                        <Button onClick={() => setShow(true)}>
+                          <span>CONTATE ME</span>
+                        </Button>
                       </div>
                     </div>
                   </div>

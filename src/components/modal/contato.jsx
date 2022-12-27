@@ -8,7 +8,7 @@ const ContatoModal = ({ show, setShow, title, content }) => {
     <Modal show={show} onHide={() => setShow(false)} dialogClassName="modal-90w" aria-labelledby="example-custom-modal-styling-title">
       <Modal.Header>
         <Modal.Title id="example-custom-modal-styling-title" className="sr-only">
-          Custom Modal Styling
+          {title}
         </Modal.Title>
         <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={() => setShow(false)}>
           <span aria-hidden="true">
