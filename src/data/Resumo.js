@@ -21,6 +21,30 @@ const Resumo = [
         items: [
           {
             id: 1,
+            title: 'Desenvolvedor Full Stack Sênior',
+            subtitle: 'Gran Cursos Online',
+            rating: '2024',
+            description:
+              'Desenvolvimento de sistemas ERP robustos para uma das maiores EdTechs da América Latina. Implementação de soluções baseadas em <span class="color-neon">Inteligência Artificial</span> e automação. Trabalho com <span class="color-neon">PHP (Laravel)</span>, <span class="color-neon">Python</span> e tecnologias modernas para suportar mais de 500 mil alunos ativos.'
+          },
+          {
+            id: 2,
+            title: 'Desenvolvedor Full Stack',
+            subtitle: 'Sigma Dataserv',
+            rating: '2023-2024',
+            description:
+              'Desenvolvimento de aplicações web e soluções tecnológicas especializadas. Implementação de sistemas utilizando <span class="color-neon">PHP</span>, <span class="color-neon">Python</span> e frameworks modernos. Foco em automação e integração de sistemas.'
+          },
+          {
+            id: 3,
+            title: 'Consultor de TI',
+            subtitle: 'Office Web',
+            rating: '2023',
+            description:
+              'Consultoria em desenvolvimento web e soluções tecnológicas. Implementação de projetos utilizando <span class="color-neon">Laravel</span>, <span class="color-neon">React</span> e <span class="color-neon">Node.js</span>. Foco em arquitetura de software e melhores práticas de desenvolvimento.'
+          },
+          {
+            id: 4,
             title: 'Governo Federal',
             subtitle: 'Ministério do Desenvolvimento',
             rating: '2022',
@@ -31,7 +55,7 @@ const Resumo = [
               '<a href="https://www.gov.br/pt-br" target="_blank">GOV.br</a>.'
           },
           {
-            id: 2,
+            id: 5,
             title: 'Gestor de Documentos Fiscais',
             subtitle: 'GRUPO ARO DE CONTABILIDADE',
             rating: '2022',
@@ -39,7 +63,7 @@ const Resumo = [
               'Contrução de um sistema semelhante ao site <a href="https://arquivei.com.br" target="_blank">arquivei.com.br</a> ao <a href="https://sieg.com" target="_blank">SIEG.com</a> para baixar e gerenciar documentos fiscais. Criamos o sistema em <span class="color-neon">Laravel</span> utilizando os melhores recursos e patterns disponíveis da ferramenta como por exemplo, Observers, Task Scheduling, Queues e etc. Utilizamos banco de dados <span class="color-neon">Postgres</span> e serviços de background em <span class="color-neon">Python</span>. '
           },
           {
-            id: 3,
+            id: 6,
             title: 'Entrega Continua',
             subtitle: 'ACX EXPERIENCE',
             rating: '2022',
@@ -47,7 +71,7 @@ const Resumo = [
               'Em todos estes projetos, criei toda a integração via GitHub e posteriormente em Bitbucket. Os pipelines para deploy e envio para a produção no servidor, bem como a integração das tarefas do Jira com o VSCode da equipe para que ao terminar uma tarefa a mesma fosse imediatamente apontada na plataforma Jira.'
           },
           {
-            id: 4,
+            id: 7,
             title: 'Baixa de CF-e`s',
             subtitle: 'ACX EXPERIENCE',
             rating: '2022',
@@ -92,6 +116,85 @@ const Resumo = [
     ]
   },
   {
+    id: 'default-home-ai-projects',
+    section: 'ai-projects-section',
+    title: 'Projetos de IA',
+    inner: [
+      {
+        id: 'ai-projects-left',
+        section_title: {
+          title: 'Inteligência Artificial',
+          subtitle: 'Projetos Inovadores'
+        },
+        items: [
+          {
+            id: 1,
+            title: 'PII-Tokenizer-To-AI',
+            subtitle: 'Tokenização de Dados Sensíveis',
+            rating: '2024',
+            description:
+              'Sistema de tokenização para proteger informações pessoais identificáveis (PII) em aplicações de IA. Implementado em <span class="color-neon">Python</span> com técnicas avançadas de criptografia e mascaramento de dados.',
+            tech: ['Python', 'Cryptography', 'NLP', 'Data Privacy']
+          },
+          {
+            id: 2,
+            title: 'SCORENEWS-IA',
+            subtitle: 'Análise de Sentimentos em Notícias',
+            rating: '2024',
+            description:
+              'Sistema de análise de sentimentos e classificação de notícias usando IA. Processa grandes volumes de texto para extrair insights e scores de relevância. Utiliza <span class="color-neon">Machine Learning</span> e <span class="color-neon">NLP</span>.',
+            tech: ['Python', 'TensorFlow', 'NLTK', 'Sentiment Analysis']
+          },
+          {
+            id: 3,
+            title: 'IA dos Impostos',
+            subtitle: 'Automação Fiscal Inteligente',
+            rating: '2024',
+            description:
+              'Sistema de automação para cálculos fiscais e tributários usando IA. Identifica padrões em documentos fiscais e automatiza processos complexos de compliance. Integração com APIs governamentais.',
+            tech: ['Python', 'OCR', 'Machine Learning', 'APIs Gov']
+          }
+        ]
+      },
+      {
+        id: 'ai-projects-right',
+        section_title: {
+          title: 'Blockchain & Automação',
+          subtitle: 'Tecnologias Emergentes'
+        },
+        items: [
+          {
+            id: 1,
+            title: 'Bitcoin-PrivateKey-Hunter',
+            subtitle: 'Análise de Carteiras Bitcoin',
+            rating: '2024',
+            description:
+              'Ferramenta para análise e auditoria de carteiras Bitcoin. Implementa algoritmos de busca e validação de chaves privadas para fins educacionais e de pesquisa em segurança blockchain.',
+            tech: ['Python', 'Bitcoin', 'Cryptography', 'Blockchain']
+          },
+          {
+            id: 2,
+            title: 'Puzzle BTC 2.0',
+            subtitle: 'Desafios Criptográficos',
+            rating: '2024',
+            description:
+              'Sistema para resolver puzzles criptográficos do Bitcoin. Utiliza computação paralela e algoritmos otimizados para análise de padrões em chaves criptográficas.',
+            tech: ['Python', 'Parallel Computing', 'Cryptanalysis']
+          },
+          {
+            id: 3,
+            title: 'Bitbucket MCP Cloud',
+            subtitle: 'Integração CI/CD Inteligente',
+            rating: '2024',
+            description:
+              'Sistema de integração contínua com IA para otimização de pipelines. Automatiza deploys e monitora performance usando <span class="color-neon">Machine Learning</span> para predição de falhas.',
+            tech: ['Python', 'Docker', 'Kubernetes', 'MLOps']
+          }
+        ]
+      }
+    ]
+  },
+  {
     id: 'default-home-skill',
     section: 'skill-section',
     title: 'Skills Mais Relevantes',
@@ -103,6 +206,33 @@ const Resumo = [
           subtitle: ''
         },
         items: [
+          {
+            id: 16,
+            images: {
+              src: '/imgs/python.png',
+              title: 'Machine Learning'
+            },
+            title: 'Machine Learning',
+            path: '#'
+          },
+          {
+            id: 17,
+            images: {
+              src: '/imgs/python.png',
+              title: 'Deep Learning'
+            },
+            title: 'Deep Learning',
+            path: '#'
+          },
+          {
+            id: 18,
+            images: {
+              src: '/imgs/python.png',
+              title: 'NLP'
+            },
+            title: 'NLP & Text Mining',
+            path: '#'
+          },
           {
             id: 1,
             images: {
@@ -293,15 +423,6 @@ const Resumo = [
             },
             title: 'Redis',
             path: '#'
-          },
-          {
-            id: 6,
-            images: {
-              src: '/imgs/graphql.png',
-              title: 'GraphQL'
-            },
-            title: 'GraphQL',
-            path: '#'
           }
         ]
       }
@@ -321,13 +442,34 @@ const Resumo = [
         items: [
           {
             id: 1,
+            title: 'Code Review AI',
+            subtitle: 'Automação de Revisão de Código',
+            rating: '2024',
+            description: 'Sistema de revisão automática de código usando IA. Analisa qualidade, identifica vulnerabilidades e sugere melhorias. Integração com <span class="color-neon">GitHub</span> e <span class="color-neon">GitLab</span>.'
+          },
+          {
+            id: 2,
+            title: 'GPT-4 API Integration',
+            subtitle: 'Chatbots Inteligentes',
+            rating: '2024',
+            description: 'Desenvolvimento de chatbots avançados usando <span class="color-neon">GPT-4</span> e <span class="color-neon">OpenAI API</span>. Implementação de assistentes virtuais para atendimento automatizado e suporte técnico.'
+          },
+          {
+            id: 3,
+            title: 'Processamento de Documentos IA',
+            subtitle: 'OCR e Análise Inteligente',
+            rating: '2024',
+            description: 'Sistema de processamento automático de documentos usando <span class="color-neon">OCR</span> e <span class="color-neon">Machine Learning</span>. Extração e classificação de dados de formulários e contratos.'
+          },
+          {
+            id: 4,
             title: 'Rancher e Kubernete',
             subtitle: 'Full Cycle',
             rating: '',
             description: 'Criação de esteiras de produção para o <span class="color-neon">Ministério do Desenvolvimento</span> ' + 'utilizando técnicas DevOps com Kubernete'
           },
           {
-            id: 2,
+            id: 5,
             title: 'Desafio SigmaGeek',
             subtitle: '',
             rating: '',
@@ -336,7 +478,7 @@ const Resumo = [
           },
 
           {
-            id: 3,
+            id: 6,
             title: 'Repositórios e Versionamento',
             subtitle: '',
             rating: '',
@@ -345,7 +487,7 @@ const Resumo = [
           },
 
           {
-            id: 4,
+            id: 7,
             title: 'Metodologias Aágeis',
             subtitle: '',
             rating: '',
@@ -353,7 +495,7 @@ const Resumo = [
               'Criação de automações na plataforma <span class="color-neon">Jira</span> para gerenciar as tarefas e integração com as ferramentas de trabalho da equipe como VSCode e repositórios como <span class="color-neon">BitBucket</span> e <span class="color-neon">GitHub</span>. <br> Trabalhos realizados com metedologia <span class="color-neon">Scrum</span> e <span class="color-neon">Git Flow</span> como gerenciamento de Branches'
           },
           {
-            id: 5,
+            id: 8,
             title: 'Montagem de Servidor Linux',
             subtitle: '',
             rating: '',
@@ -370,6 +512,22 @@ const Resumo = [
         items: [
           {
             id: 1,
+            title: 'Automação com IA',
+            subtitle: 'Agentes Inteligentes',
+            rating: '',
+            description:
+              'Desenvolvimento de agentes de IA para automação de processos complexos. Utilização de <span class="color-neon">Python</span>, <span class="color-neon">LangChain</span> e <span class="color-neon">OpenAI API</span> para criar assistentes virtuais especializados.'
+          },
+          {
+            id: 2,
+            title: 'APIs REST e Integração',
+            subtitle: 'Integração de Sistemas',
+            rating: '',
+            description:
+              'Desenvolvimento de APIs robustas para integração de sistemas. Experiência com <span class="color-neon">REST</span>, <span class="color-neon">FastAPI</span> e <span class="color-neon">Laravel API Resources</span> para criação de microserviços escaláveis.'
+          },
+          {
+            id: 3,
             title: 'Testes Unitários',
             subtitle: '',
             rating: '',
@@ -377,7 +535,7 @@ const Resumo = [
               'Utilização de testes unitários com <span class="color-neon">PEST</span> e <span class="color-neon">PHPUnit</span> para Laravel e <span class="color-neon">JEST</span> para NodeJs'
           },
           {
-            id: 2,
+            id: 4,
             title: 'FrameWorks',
             subtitle: '',
             rating: '',
@@ -385,7 +543,7 @@ const Resumo = [
               'Alguns frameworks que vale a pena mencionar minha familiaridade são: <span class="color-neon">AdonisJS, Next.Js</span> e <span class="color-neon">Vue.Js</span>, cujos quais tive a oportunidade de interagir em alguns projetos.'
           },
           {
-            id: 3,
+            id: 5,
             title: 'Linguagens',
             subtitle: '',
             rating: '',
@@ -410,27 +568,34 @@ const Resumo = [
         items: [
           {
             id: 1,
-            title: 'Análise e Desenvolvimento de Sistemas',
+            title: 'Bacharelado em Inteligência Artificial',
             subtitle: 'Faculdade Anhanguera',
-            rating: 'Cursando',
-            description: ''
+            rating: 'Cursando - 2024',
+            description: 'Graduação focada em Machine Learning, Deep Learning, Processamento de Linguagem Natural e desenvolvimento de sistemas inteligentes.'
           },
           {
             id: 2,
+            title: 'Análise e Desenvolvimento de Sistemas',
+            subtitle: 'Faculdade Anhanguera',
+            rating: 'Concluído - 2023',
+            description: 'Formação completa em desenvolvimento de software, banco de dados, engenharia de software e arquitetura de sistemas.'
+          },
+          {
+            id: 3,
             title: 'Técnico Florestal, Meio Ambiente E Tecnologias Comerciais',
             subtitle: 'Centro Paula SouzaCentro Paula Souza (2008 - 2010)',
             rating: '2010',
             description: 'Formação técnica em agroflorestas e meio ambiente.'
           },
           {
-            id: 3,
+            id: 4,
             title: 'Ténico em Açucar e Alcool',
             subtitle: 'Centro Paula SouzaCentro Paula Souza (2008 - 2010)',
             rating: '2010',
             description: 'Trabalhos com tecnologias químicas mais voltada para usinas açucareiras, porém com o foco em produção química.'
           },
           {
-            id: 4,
+            id: 5,
             title: 'Ensino Médio',
             subtitle: 'E.E Coronel João Cruz',
             rating: '2004',
@@ -446,7 +611,31 @@ const Resumo = [
         },
         items: [
           {
+            id: 1,
+            title: 'Machine Learning e AI Specialization',
+            subtitle: 'Coursera - Stanford University',
+            rating: '2024',
+            description:
+              'Especialização completa em Machine Learning, Deep Learning e Inteligência Artificial. Certificação em algoritmos de ML, redes neurais e aplicações práticas de IA.'
+          },
+          {
             id: 2,
+            title: 'Python for Data Science and AI',
+            subtitle: 'IBM - Coursera',
+            rating: '2024',
+            description:
+              'Certificação em Python aplicado à Ciência de Dados e Inteligência Artificial. Foco em bibliotecas como Pandas, NumPy, Scikit-learn e TensorFlow.'
+          },
+          {
+            id: 3,
+            title: 'AWS Cloud Practitioner',
+            subtitle: 'Amazon Web Services',
+            rating: '2023',
+            description:
+              'Certificação fundamental em computação em nuvem AWS. Conhecimento em EC2, S3, Lambda, RDS e outros serviços essenciais da AWS.'
+          },
+          {
+            id: 4,
             title: 'Formação DBA SqlServer 2019, Desenvolvedor Banco de Dados',
             subtitle: 'Udemy (2021)',
             rating: '2021',
@@ -454,7 +643,7 @@ const Resumo = [
               'Códigos de exames da microsoft aprendidos neste curso:<br> 70-761: Querying Data with Transact-SQL. <br> 70-762: Developing SQL Databases<br> 70-764: Maintaning SQL Databases.'
           },
           {
-            id: 1,
+            id: 5,
             title: 'Autodidata em tudo o mais.',
             subtitle: 'Internet das coisas)',
             rating: '2001+',

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { Helmet } from 'react-helmet'
 import WOW from '../../node_modules/wow.js/src/WOW'
 import Aos from 'aos'
+
 const External = () => {
   useEffect(() => {
     const wow = new WOW({
@@ -22,11 +22,7 @@ const External = () => {
     }
   })
 
-  return (
-    <React.Fragment>
-      <Helmet></Helmet>
-    </React.Fragment>
-  )
+  return null
 }
 
 export default External

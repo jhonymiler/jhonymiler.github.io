@@ -4,6 +4,22 @@ import Button from '@ui/button'
 import Typed from 'react-typed'
 import Social, { SocialLink } from '@ui/social'
 
+// Função para calcular idade dinamicamente
+const calculateAge = (birthDate) => {
+  const today = new Date()
+  const birth = new Date(birthDate)
+  let age = today.getFullYear() - birth.getFullYear()
+  const monthDiff = today.getMonth() - birth.getMonth()
+  
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+    age--
+  }
+  
+  return age
+}
+
+const currentAge = calculateAge('1987-06-06') // Data de nascimento: 06/06/1987
+
 const page = {
   id: 'developer-home-hero',
 
@@ -15,18 +31,18 @@ const page = {
       content: 'Olá, eu sou <span>Jonatas</span>'
     }
   ],
-  animated_texts: ['Back-end.', 'Front-end.', 'Full stack.'],
+  animated_texts: ['Full Stack.', 'IA Specialist.', 'Arquiteto de Software.'],
   texts: [
     {
       content:
-        'Autodipage, comecei na programação de maneira profissional em <b style="color: rgb(21,232,111);">2008</b> onde fui Co-fundador da <b>OfficeWeb Soluções em Internet</b> no desenvolvimento de web sites e sistemas de gestão para web. Hoje trabalho com diversas tecnologias, entre elas, algumas listadas abaixo. Tendo como linguagem mais forte o PHP.'
+        'Desenvolvedor Full Stack Sênior com mais de <b style="color: rgb(21,232,111);">14 anos de experiência</b>, especialista em <b>PHP (Laravel)</b> e <b>Python</b>. Atualmente trabalho na <b style="color: rgb(21,232,111);">Gran Cursos Online</b>, uma das maiores EdTechs da América Latina, desenvolvendo sistemas ERP robustos e soluções baseadas em <b>Inteligência Artificial</b>. Cursando graduação em <b>Inteligência Artificial</b> e aplicando técnicas modernas de automação com agentes de IA.'
     }
   ],
   socials: [
     {
       id: 1,
       title: 'Linkedin',
-      path: 'https://www.linkedin.com/in/jonatas-miler-83805053/',
+      path: 'https://www.linkedin.com/in/jhonymiler/',
       icon: 'SiLinkedin'
     },
     {
@@ -53,6 +69,14 @@ const page = {
     },
     {
       id: 2,
+      title: 'Python',
+      image: {
+        src: '../imgs/python.png',
+        alt: 'Python'
+      }
+    },
+    {
+      id: 3,
       title: 'ReactJs',
       image: {
         src: '../imgs/react.png',
@@ -60,7 +84,7 @@ const page = {
       }
     },
     {
-      id: 3,
+      id: 4,
       title: 'Javascript',
       image: {
         src: '../imgs/javascript.png',
@@ -68,26 +92,18 @@ const page = {
       }
     },
     {
-      id: 3,
-      title: 'HTML',
+      id: 5,
+      title: 'NodeJS',
       image: {
-        src: '../imgs/html.png',
-        alt: 'HTML'
-      }
-    },
-    {
-      id: 3,
-      title: 'CSS',
-      image: {
-        src: '../imgs/css.png',
-        alt: 'CSS'
+        src: '../imgs/nodejs.png',
+        alt: 'NodeJS'
       }
     }
   ],
   items: [
     {
       id: 1,
-      title: '35 Anos',
+      title: `${currentAge} Anos`,
       icon: 'FiSunrise'
     },
     {
@@ -99,6 +115,18 @@ const page = {
       id: 3,
       title: 'Piracicaba/SP - Brasil',
       icon: 'RiMapPinFill'
+    },
+    {
+      id: 4,
+      title: 'linkedin.com/in/jhonymiler',
+      icon: 'SiLinkedin',
+      link: 'https://www.linkedin.com/in/jhonymiler/'
+    },
+    {
+      id: 5,
+      title: 'github.com/jhonymiler',
+      icon: 'BsGithub',
+      link: 'https://github.com/jhonymiler'
     }
   ],
   buttons: [
@@ -106,15 +134,10 @@ const page = {
       id: 1,
       path: '../documentos/CURRICULUM - 19-07-2022.pdf',
       content: 'DOWNLOAD CV'
-    },
-    {
-      id: 2,
-      path: '#contacts',
-      content: 'CONTACTE ME'
     }
   ]
 }
-export default function Apresentacao({ show, setShow }) {
+export default function Apresentacao() {
   return (
     <div id="developer-home-hero" className="rn-slide-area">
       <div className="slide slider-style-3 ">
@@ -176,9 +199,9 @@ export default function Apresentacao({ show, setShow }) {
                           <div className="skill-share-inner">
                             <span className="title">Melhores Skills</span>
                             <ul className="skill-share d-flex liststyle">
-                              {page.skills.map((skill) => (
-                                <li>
-                                  <Image key={skill.id} src={skill.image.src} title={skill.image.alt || 'skill'} />
+                              {page.skills.map((skill, index) => (
+                                <li key={skill.id || index}>
+                                  <Image src={skill.image.src} title={skill.image.alt || 'skill'} />
                                 </li>
                               ))}
                             </ul>
@@ -201,7 +224,13 @@ export default function Apresentacao({ show, setShow }) {
                             {page.items.map((item) => (
                               <div key={item.id} className="info">
                                 <Icon size={24} name={item.icon} />
-                                {item?.title && <span>{item.title}</span>}
+                                {item?.link ? (
+                                  <a href={item.link} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    <span>{item.title}</span>
+                                  </a>
+                                ) : (
+                                  <span>{item.title}</span>
+                                )}
                               </div>
                             ))}
                           </div>
@@ -218,10 +247,6 @@ export default function Apresentacao({ show, setShow }) {
                       <div className="button-wrapper d-flex">
                         <Button className="mr--30" path="../documentos/CURRICULUM - 19-07-2022.pdf">
                           <span>DOWNLOAD CV</span>
-                        </Button>
-
-                        <Button onClick={() => setShow(true)}>
-                          <span>CONTATE ME</span>
                         </Button>
                       </div>
                     </div>

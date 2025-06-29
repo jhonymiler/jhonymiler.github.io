@@ -1,34 +1,23 @@
-import { gql, GraphQLClient } from 'graphql-request'
-import { useQuery } from '@tanstack/react-query'
+// Dados locais do header
+const headerData = {
+  headers: [
+    { id: 1, link: '#developer-home-hero', text: 'Home' },
+    { id: 2, link: '#resumo', text: 'Resumo' }
+  ],
+  logos: [
+    { id: 1, url: '/imgs/JM-logo.svg' },
+    { id: 2, url: '/imgs/JM.svg' }
+  ]
+}
 
-const API_URL = import.meta.env.VITE_PROJECT_ID
-const graphClient = new GraphQLClient(API_URL, {
-  headers: {
-    Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`
-  },
-  mode: 'cors'
-})
-
-// Pega a lista de menu e logos
+// Hook simplificado que retorna dados locais
 export function useHeader() {
-  // useQuery hook do React-Query
-  const dados = useQuery(['Headers'], async () => {
-    return await graphClient.request(
-      gql`
-        query Headers {
-          headers {
-            id
-            link
-            text
-          }
-          logos {
-            id
-            url
-          }
-        }
-      `
-    )
-  })
-
-  return dados
+  // Retorna dados locais diretamente sem GraphQL
+  return {
+    data: headerData,
+    isLoading: false,
+    error: null,
+    isError: false,
+    isSuccess: true
+  }
 }

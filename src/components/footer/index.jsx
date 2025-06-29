@@ -1,4 +1,5 @@
-import { FaEthereum, FaReact, SiCss3, SiGraphql, SiHtml5, SiJavascript, SiSolidity, SiWeb3Dotjs } from 'react-icons/all'
+import { FaEthereum, FaReact } from 'react-icons/fa'
+import { SiCss3, SiHtml5, SiJavascript, SiSolidity, SiWeb3Dotjs, SiPython } from 'react-icons/si'
 
 export default function Footer() {
   return (
@@ -15,8 +16,8 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a className="circle only-border" href="#" title="GraphQl">
-                      <SiGraphql stroke="1" size={24} />
+                    <a className="circle only-border" href="#" title="Python & IA">
+                      <SiPython stroke="1" size={24} />
                     </a>
                   </li>
                   <li>
@@ -53,10 +54,7 @@ export default function Footer() {
                 </ul>
               </div>
 
-              <p
-                className="description mt
-              -30"
-              >
+              <p className="description mt-30">
                 Tecnologias utilizadas nesta página.
               </p>
             </div>

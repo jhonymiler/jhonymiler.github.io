@@ -6,13 +6,28 @@ import { useSticky, useOffcanvas } from '@hooks'
 import Nav from './Nav'
 
 import {} from 'react-icons/fi'
-import ContatoModal from '../modal/contato'
 import { useState } from 'react'
 
-export default function Header({ show, setShow }) {
-  const { data, isLoading } = useHeader()
+export default function Header() {
+  const { data, isLoading, error } = useHeader()
   const sticky = useSticky()
   const { offcanvas, offcanvasHandler } = useOffcanvas()
+
+  // Se houver erro na consulta GraphQL ou dados não estiverem disponíveis, usa dados locais
+  const fallbackData = {
+    logos: [
+      { id: 1, url: '/imgs/JM-logo.svg' },
+      { id: 2, url: '/imgs/JM.svg' }
+    ],
+    headers: [
+      { id: 1, link: '#home', text: 'Home' },
+      { id: 2, link: '#about', text: 'Sobre' },
+      { id: 3, link: '#skills', text: 'Skills' },
+      { id: 4, link: '#experience', text: 'Experiência' }
+    ]
+  }
+
+  const headerData = (data && data.logos && data.headers) ? data : fallbackData
 
   return (
     <>
@@ -24,7 +39,7 @@ export default function Header({ show, setShow }) {
                 <div className="header-left">
                   <div className="logo">
                     <a href="/">
-                      <img src={data.logos[0].url} alt="logo" />
+                      <img src={headerData.logos[0].url} alt="logo" />
                     </a>
                   </div>
                 </div>
@@ -32,21 +47,21 @@ export default function Header({ show, setShow }) {
               <div className="col-lg-10 col-6">
                 <div className="header-center">
                   <nav id="sideNav" className="mainmenu-nav navbar-example2 d-none d-xl-block">
-                    <Nav menus={data.headers} setShow={setShow} />
+                    <Nav menus={headerData.headers} />
                   </nav>
                   <div className="button-group header-right">
-                    <a className="rn-btn border-button btn-small" target="_blank" href="#">
-                      <span>Login Wallet</span>
-                    </a>
-
                     <BurgerButton onClick={offcanvasHandler} />
                   </div>
                 </div>
               </div>
             </div>
           </header>
-          <PopupMenu isOpen={offcanvas} onClick={offcanvasHandler} setShow={setShow} menus={data.headers} logo={data.logos[1].url} />
-          <ContatoModal show={show} setShow={setShow} title="Contate Me" content="" />
+          <PopupMenu 
+            isOpen={offcanvas} 
+            onClick={offcanvasHandler} 
+            menus={headerData.headers} 
+            logo={headerData.logos && headerData.logos[1] ? headerData.logos[1].url : headerData.logos[0].url} 
+          />
         </>
       ) : (
         <div className="w-100 h-100 position-absolute d-flex">
