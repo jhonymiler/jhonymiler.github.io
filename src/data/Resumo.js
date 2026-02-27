@@ -4,7 +4,7 @@ const Resumo = [
     section: 'resume-section',
     section_title: {
       title: 'Meu Resumo',
-      subtitle: '14+ De Experiência'
+      subtitle: '18+ De Experiência'
     }
   },
   {
@@ -21,19 +21,59 @@ const Resumo = [
         items: [
           {
             id: 1,
-            title: 'Desenvolvedor Full Stack Sênior',
+            title: 'Desenvolvedor Sênior de Integrações',
             subtitle: 'Gran Cursos Online',
-            rating: '2024',
+            rating: '2023 – Presente',
             description:
-              'Desenvolvimento de sistemas ERP robustos para uma das maiores EdTechs da América Latina. Implementação de soluções baseadas em <span class="color-neon">Inteligência Artificial</span> e automação. Trabalho com <span class="color-neon">PHP (Laravel)</span>, <span class="color-neon">Python</span> e tecnologias modernas para suportar mais de 500 mil alunos ativos.'
+              'Atuação no squad de integrações (Backoffice ERP) responsável por toda a comunicação entre sistemas internos e parceiros externos (<span class="color-neon">Oracle ERP</span>, adquirentes, fornecedores financeiros) para mais de <span class="color-neon">500 mil alunos ativos</span>. Principais entregas: <b>Diferimento 2.0</b> (AWS SQS + Lambda), <b>ResilientHttpClient</b> (Circuit Breaker + Retry), <b>RFC-004 MS Conciliador</b> (NestJS/TypeORM), <b>Tech Talk MCP</b>. Premiado com o <span class="color-neon">Gran Pix</span> pelo impacto na conciliação financeira.'
+          },
+          {
+            id: 9,
+            title: 'Análise de Diferimento — R$100k → R$5k',
+            subtitle: 'Gran Cursos Online (Projeto próprio)',
+            rating: '2024 – Presente',
+            description:
+              'Idealizei e construí sistema que roda diariamente, cruzando dados de pagamentos e diferimentos com <span class="color-neon">9 validadores</span> em cadeia (Chain of Responsibility). Gera relatórios XLSX e 3 dashboards <span class="color-neon">Streamlit</span>. Reduziu divergência financeira de ~R$100k para ~R$5k em volume de R$60 milhões/mês (eficiência <span class="color-neon">99,99%</span>). Stack: Python 3.12, pandas, Streamlit, MySQL, S3, Docker.'
+          },
+          {
+            id: 10,
+            title: 'Conciliação de Vendas — Prêmio Gran Pix',
+            subtitle: 'Gran Cursos Online (Projeto próprio)',
+            rating: '2024 – Presente',
+            description:
+              'CLI em <span class="color-neon">Python</span> que rastreia cada transação (TID) em 3 sistemas distintos usando <span class="color-neon">Chain of Responsibility</span> com busca assíncrona (aioboto3, pool de 50 conexões). Elevou taxa de conciliação de ~90% para <span class="color-neon">100%</span>, desbloqueando relatórios confiáveis para investidores (BTG). Reconhecido com o <span class="color-neon">Prêmio Gran Pix</span>.'
+          },
+          {
+            id: 11,
+            title: 'RFC-004 — MS Conciliador (Equals)',
+            subtitle: 'Gran Cursos Online',
+            rating: '2025 – Presente',
+            description:
+              'Responsável técnico do RFC e arquitetura completa do microsserviço em <span class="color-neon">NestJS + TypeORM + TypeScript</span>. 3 Jobs independentes integrando 4 fontes de dados. Tabela agnóstica de fornecedor com <span class="color-neon">Strategy Pattern</span>. ADR-001: MySQL vs DynamoDB. Identificação de 6 gaps críticos de segurança (PCI/PII).'
+          },
+          {
+            id: 12,
+            title: 'ResilientHttpClient — Resiliência Proativa',
+            subtitle: 'Gran Cursos Online',
+            rating: '2025',
+            description:
+              'Análise proativa de 9 módulos da API de integração — 8 sem padrões de resiliência. Implementei <span class="color-neon">Circuit Breaker</span>, <span class="color-neon">Retry Exponencial</span>, Timeout configurável e logging estruturado para <span class="color-neon">Datadog</span>. Eliminação de inconsistências financeiras causadas por falhas silenciosas.'
+          },
+          {
+            id: 13,
+            title: 'Integration Contract Validator',
+            subtitle: 'Gran Cursos Online (Projeto próprio)',
+            rating: '2024 – 2025',
+            description:
+              'Sistema com interface reativa (<span class="color-neon">Livewire 3</span>) que processa centenas de milhares de faturas/mês em batch (Horizon/Redis), classificando motivos de não-integração. Evoluiu para validação diretamente no pipeline de integração com resiliência inteligente. Stack: Laravel 10, PHP 8.2, Livewire 3, Horizon, Redis, WebSockets.'
           },
           {
             id: 2,
             title: 'Desenvolvedor Full Stack',
             subtitle: 'Sigma Dataserv',
-            rating: '2023-2024',
+            rating: '2023 – 2024',
             description:
-              'Desenvolvimento de aplicações web e soluções tecnológicas especializadas. Implementação de sistemas utilizando <span class="color-neon">PHP</span>, <span class="color-neon">Python</span> e frameworks modernos. Foco em automação e integração de sistemas.'
+              'Desenvolvimento de aplicações web e soluções tecnológicas especializadas. Implementação de sistemas utilizando <span class="color-neon">PHP</span>, <span class="color-neon">Python</span> e frameworks modernos. Foco em automação e integração de sistemas distribuídos.'
           },
           {
             id: 3,
@@ -58,25 +98,25 @@ const Resumo = [
             id: 5,
             title: 'Gestor de Documentos Fiscais',
             subtitle: 'GRUPO ARO DE CONTABILIDADE',
-            rating: '2022',
+            rating: '2021 – 2022',
             description:
-              'Contrução de um sistema semelhante ao site <a href="https://arquivei.com.br" target="_blank">arquivei.com.br</a> ao <a href="https://sieg.com" target="_blank">SIEG.com</a> para baixar e gerenciar documentos fiscais. Criamos o sistema em <span class="color-neon">Laravel</span> utilizando os melhores recursos e patterns disponíveis da ferramenta como por exemplo, Observers, Task Scheduling, Queues e etc. Utilizamos banco de dados <span class="color-neon">Postgres</span> e serviços de background em <span class="color-neon">Python</span>. '
+              'Construção de um sistema semelhante ao site <a href="https://arquivei.com.br" target="_blank">arquivei.com.br</a> ao <a href="https://sieg.com" target="_blank">SIEG.com</a> para baixar e gerenciar documentos fiscais. Criamos o sistema em <span class="color-neon">Laravel</span> utilizando Observers, Task Scheduling, Queues. Banco <span class="color-neon">PostgreSQL</span> e serviços de background em <span class="color-neon">Python</span>.'
           },
           {
             id: 6,
-            title: 'Entrega Continua',
+            title: 'Entrega Contínua',
             subtitle: 'ACX EXPERIENCE',
-            rating: '2022',
+            rating: '2021 – 2022',
             description:
-              'Em todos estes projetos, criei toda a integração via GitHub e posteriormente em Bitbucket. Os pipelines para deploy e envio para a produção no servidor, bem como a integração das tarefas do Jira com o VSCode da equipe para que ao terminar uma tarefa a mesma fosse imediatamente apontada na plataforma Jira.'
+              'Criação de pipelines <span class="color-neon">CI/CD</span> completos via GitHub e Bitbucket com integração ao <span class="color-neon">Jira</span> e deploy automatizado para produção. Integração das tarefas do Jira com o VSCode da equipe.'
           },
           {
             id: 7,
             title: 'Baixa de CF-e`s',
             subtitle: 'ACX EXPERIENCE',
-            rating: '2022',
+            rating: '2021 – 2022',
             description:
-              'Criação de automação em <span class="color-neon">Python</span> para recuperar 4 Milhões de arquivos SAT para uma rede de supermercados. O sistema é um projeto pessoal cujo serviço pode ser solicitado diretamente a mim caso precise recuperar arquivos fiscais perdidos.'
+              'Criação de automação em <span class="color-neon">Python</span> para recuperar <span class="color-neon">4 Milhões de arquivos SAT</span> para uma rede de supermercados. Projeto pessoal cujo serviço pode ser solicitado diretamente.'
           }
         ]
       },
@@ -88,28 +128,76 @@ const Resumo = [
         },
         items: [
           {
+            id: 8,
+            title: 'Auditor de Diferimento 2.0',
+            subtitle: 'Gran Cursos Online (Projeto próprio)',
+            rating: '2024 – Presente',
+            description:
+              'Sistema com <span class="color-neon">12 validadores</span> em cadeia (Chain of Responsibility) que comparam cada campo entre versão legada e nova do motor de diferimento contábil. Processamento em batch (chunks de 10k) com <span class="color-neon">Horizon</span> e dashboards no <span class="color-neon">Grafana</span>. Stack: Laravel 12, PHP 8.2, Horizon, Redis, Grafana, Prometheus.'
+          },
+          {
+            id: 9,
+            title: 'Contingência Reforma Tributária',
+            subtitle: 'Gran Cursos Online',
+            rating: '2026',
+            description:
+              'Risco de <span class="color-neon">> R$ 5 milhões</span> mitigado. Prefeitura de Curitiba bloqueou emissão de NFs retroativas afetando 5.571 transações. Gerei payloads de contingência com data ajustada e sufixo .R no transaction number. Risco legal e financeiro <span class="color-neon">eliminado</span>. Jira: BOIIF-1687 (Highest).'
+          },
+          {
+            id: 10,
+            title: 'Automação de Estornos',
+            subtitle: 'Gran Cursos Online (Projeto próprio)',
+            rating: '2024 – Presente',
+            description:
+              'Sistema com 2 módulos: relatório analítico e executor de estornos. Processamento paralelo com <span class="color-neon">8 workers</span>, transações atômicas, modo simulação por padrão. Impediu geração de NFs a maior de contratos cancelados, economizando <span class="color-neon">milhares em impostos</span>. Stack: Python, MySQL, ProcessPoolExecutor.'
+          },
+          {
+            id: 11,
+            title: 'Diferimento 2.0 — ADR001',
+            subtitle: 'Gran Cursos Online',
+            rating: '2024 – 2025',
+            description:
+              'Transformei job batch síncrono em arquitetura <span class="color-neon">event-driven assíncrona</span>. ADR aprovada pelo time de arquitetura. Fila <span class="color-neon">AWS SQS</span>, <span class="color-neon">Lambda</span> (Serverless Framework), 3 tentativas com backoff exponencial, <span class="color-neon">DLQ</span> com alerta Slack e webhook bidirecional de callback.'
+          },
+          {
+            id: 12,
+            title: 'Tech Talk: MCP na Prática',
+            subtitle: 'Gran Cursos Online',
+            rating: '2025',
+            description:
+              'Apresentei internamente o <span class="color-neon">Model Context Protocol (MCP)</span> — protocolo que conecta LLMs a ferramentas externas. Demo com <span class="color-neon">FastMCP</span> (Python), integrações com Git, Jira e Bitbucket. Exemplo de MCP de Pagamentos aplicado ao contexto da empresa.'
+          },
+          {
             id: 1,
             title: 'Projeto ERP Web',
             subtitle: 'GRUPO ARO DE CONTABILIDADE',
-            rating: '2021',
+            rating: '2021 – 2022',
             description:
-              'Conversão de sistema legado de ERP em Dephi pra backend C# e frontend <span class="color-neon">ReactJs</span>. Criei a estrutura de layout e preparação da base do React para início dos trabalhos. Trabalhei no front usando <span class="color-neon">React Query</span> para consumo de API REST.'
+              'Conversão de sistema legado de ERP em Delphi para backend C# e frontend <span class="color-neon">ReactJs</span>. Estruturação do layout e consumo de API REST com <span class="color-neon">React Query</span>.'
           },
           {
             id: 2,
             title: 'Projeto HelpDesk',
             subtitle: 'GRUPO ARO DE CONTABILIDADE',
-            rating: '2021',
+            rating: '2021 – 2022',
             description:
-              'Criei um sistema de Ticket em <span class="color-neon">PHP</span> e <span class="color-neon">MySql</span>, com chat em <span class="color-neon">NodeJs</span> operando via WebSocket para atender demanda interna da empresa. Para isso criei também toda a estrutura de servidor Linux e a integração constínua via Pipeline entre GitHub e sincronização SSH com deploy para o servidor.'
+              'Sistema de Ticket em <span class="color-neon">PHP</span> e <span class="color-neon">MySQL</span>, com chat em tempo real via <span class="color-neon">Node.js + WebSocket</span>. Setup de servidor Linux e pipeline CI/CD via GitHub + SSH.'
           },
           {
             id: 3,
             title: 'Projeto Dashboard',
             subtitle: 'ACX EXPERIENCE',
-            rating: '2021',
+            rating: '2021 – 2022',
             description:
-              'Criei uma integração com o ERP de Gestão Industrial da empresa para exibir gráficos analíticos diversos e dinâmicos. Para isso foi usado <span class="color-neon">PHP</span> e <span class="color-neon">JQuery</span> com cadastro de consultas <span class="color-neon">SQL Server</span> para que o consultor pudesse criar suas prórpias consultas e que os gráficos fossem montados dinamicamente.'
+              'Integração com ERP de Gestão Industrial para gráficos analíticos dinâmicos. Stack: <span class="color-neon">PHP</span>, <span class="color-neon">jQuery</span>, <span class="color-neon">SQL Server</span> com consultas dinâmicas configuráveis pelo consultor.'
+          },
+          {
+            id: 13,
+            title: 'Integration Front — Painel Financeiro',
+            subtitle: 'Gran Cursos Online',
+            rating: '2023 – Presente',
+            description:
+              'Principal contribuidor (<span class="color-neon">163/414 commits, 39%</span>) do painel administrativo em <span class="color-neon">React 18 + TypeScript + Vite</span>. 12 releases. Ferramenta utilizada diariamente pelo time financeiro da Gran.'
           }
         ]
       }
@@ -298,6 +386,24 @@ const Resumo = [
             path: '#'
           },
           {
+            id: 19,
+            images: {
+              src: '/imgs/nestjs.png',
+              title: 'NestJS'
+            },
+            title: 'NestJS',
+            path: '#'
+          },
+          {
+            id: 20,
+            images: {
+              src: '/imgs/typescript.png',
+              title: 'TypeScript'
+            },
+            title: 'TypeScript',
+            path: '#'
+          },
+          {
             id: 10,
             images: {
               src: '/imgs/adonisjs.png',
@@ -375,7 +481,7 @@ const Resumo = [
       {
         id: 'default-home-skill-right',
         section_title: {
-          title: 'Banco de Dados',
+          title: 'Banco de Dados & Infra',
           subtitle: ''
         },
         items: [
@@ -423,6 +529,33 @@ const Resumo = [
             },
             title: 'Redis',
             path: '#'
+          },
+          {
+            id: 6,
+            images: {
+              src: '/imgs/aws.png',
+              title: 'AWS'
+            },
+            title: 'AWS (SQS, Lambda, S3)',
+            path: '#'
+          },
+          {
+            id: 7,
+            images: {
+              src: '/imgs/docker.png',
+              title: 'Docker'
+            },
+            title: 'Docker',
+            path: '#'
+          },
+          {
+            id: 8,
+            images: {
+              src: '/imgs/datadog.png',
+              title: 'Datadog'
+            },
+            title: 'Datadog',
+            path: '#'
           }
         ]
       }
@@ -436,119 +569,126 @@ const Resumo = [
       {
         id: 'default-home-experience-left',
         section_title: {
-          title: 'Experiências',
-          subtitle: '2008 - 2022'
+          title: 'Liderança Técnica',
+          subtitle: '2023 – Presente'
         },
         items: [
           {
             id: 1,
+            title: 'ADRs & RFCs',
+            subtitle: 'Decisões Arquiteturais Documentadas',
+            rating: '2024 – Presente',
+            description: 'Proponho e defendo Architectural Decision Records e Requests for Comments. <span class="color-neon">ADR001</span> (Diferimento Assíncrono com AWS SQS + Lambda) aprovada pelo time de arquitetura. <span class="color-neon">RFC-004</span> (MS Conciliador) em v4.0 com 6 gaps de segurança identificados.'
+          },
+          {
+            id: 2,
             title: 'Code Review AI',
             subtitle: 'Automação de Revisão de Código',
             rating: '2024',
             description: 'Sistema de revisão automática de código usando IA. Analisa qualidade, identifica vulnerabilidades e sugere melhorias. Integração com <span class="color-neon">GitHub</span> e <span class="color-neon">GitLab</span>.'
           },
           {
-            id: 2,
-            title: 'GPT-4 API Integration',
-            subtitle: 'Chatbots Inteligentes',
-            rating: '2024',
-            description: 'Desenvolvimento de chatbots avançados usando <span class="color-neon">GPT-4</span> e <span class="color-neon">OpenAI API</span>. Implementação de assistentes virtuais para atendimento automatizado e suporte técnico.'
-          },
-          {
             id: 3,
-            title: 'Processamento de Documentos IA',
-            subtitle: 'OCR e Análise Inteligente',
-            rating: '2024',
-            description: 'Sistema de processamento automático de documentos usando <span class="color-neon">OCR</span> e <span class="color-neon">Machine Learning</span>. Extração e classificação de dados de formulários e contratos.'
+            title: 'Observabilidade & Monitoramento',
+            subtitle: 'Datadog, Grafana, Prometheus',
+            rating: '2024 – Presente',
+            description: 'Logging estruturado para <span class="color-neon">Datadog</span> com dashboards de saúde das integrações. Configuração de <span class="color-neon">Grafana + Prometheus</span> para métricas de erros por dia, tipo e produto. Alertas automatizados via <span class="color-neon">Slack</span>.'
           },
           {
             id: 4,
-            title: 'Rancher e Kubernete',
-            subtitle: 'Full Cycle',
-            rating: '',
-            description: 'Criação de esteiras de produção para o <span class="color-neon">Ministério do Desenvolvimento</span> ' + 'utilizando técnicas DevOps com Kubernete'
+            title: 'Rancher e Kubernetes',
+            subtitle: 'DevOps & Infraestrutura',
+            rating: '2022',
+            description: 'Criação de esteiras de produção para o <span class="color-neon">Ministério do Desenvolvimento</span> utilizando técnicas DevOps com Kubernetes.'
           },
           {
             id: 5,
             title: 'Desafio SigmaGeek',
-            subtitle: '',
+            subtitle: 'Computação de Alta Performance',
             rating: '',
             description:
-              'Participação do Desafio da <span class="color-neon">SigmaGeek</span> para encontrar os números palindrômicos primos da extenção de casas decimais do número PI. Realizei o teste em python processando 6,6 Bilhões de números por minuto. O algorítimo se encontra no <a href="https://github.com/jhonymiler/Prime-Palindromic-by-Pi">GitHub</a>'
+              'Participação do Desafio da <span class="color-neon">SigmaGeek</span> para encontrar números palindrômicos primos de casas decimais do PI. Processamento de <span class="color-neon">6,6 Bilhões de números/min</span> em Python. Algoritmo no <a href="https://github.com/jhonymiler/Prime-Palindromic-by-Pi">GitHub</a>'
           },
-
           {
             id: 6,
             title: 'Repositórios e Versionamento',
-            subtitle: '',
+            subtitle: 'CI/CD & Git Flow',
             rating: '',
             description:
-              'Utilização das plataformas de repositório como Bitbucket e GitHub, criação de pipelines <span class="color-neon">CI/CD</span> para entrega contínua e utilização do conceito Git Flow como metodo de versionamento.'
+              'Bitbucket e GitHub, pipelines <span class="color-neon">CI/CD</span> para entrega contínua e Git Flow como método de versionamento. Experiência com <span class="color-neon">Serverless Framework</span> para deploys de Lambdas.'
           },
-
           {
             id: 7,
-            title: 'Metodologias Aágeis',
-            subtitle: '',
+            title: 'Metodologias Ágeis',
+            subtitle: 'Scrum & Kanban',
             rating: '',
             description:
-              'Criação de automações na plataforma <span class="color-neon">Jira</span> para gerenciar as tarefas e integração com as ferramentas de trabalho da equipe como VSCode e repositórios como <span class="color-neon">BitBucket</span> e <span class="color-neon">GitHub</span>. <br> Trabalhos realizados com metedologia <span class="color-neon">Scrum</span> e <span class="color-neon">Git Flow</span> como gerenciamento de Branches'
-          },
-          {
-            id: 8,
-            title: 'Montagem de Servidor Linux',
-            subtitle: '',
-            rating: '',
-            description: 'Criação e preparo de servidor Linux para serviço dedicado em AWS ou Local. Usando Ubuntu Focal ou CentOS, preparo para APACHE, FTP ou SSH para hospedagem de aplicações web.'
+              'Automações no <span class="color-neon">Jira</span> para gerenciamento de tarefas e integração com ferramentas da equipe como VSCode, <span class="color-neon">BitBucket</span> e <span class="color-neon">GitHub</span>. <br> Trabalhos com <span class="color-neon">Scrum</span> e <span class="color-neon">Git Flow</span> para gerenciamento de Branches.'
           }
         ]
       },
       {
         id: 'default-home-section-right',
         section_title: {
-          title: 'Familiaridade',
-          subtitle: '2008 - 2022'
+          title: 'Familiaridade & Stack',
+          subtitle: 'Tecnologias & Patterns'
         },
         items: [
           {
             id: 1,
-            title: 'Automação com IA',
-            subtitle: 'Agentes Inteligentes',
-            rating: '',
+            title: 'Automação com IA & Agentes',
+            subtitle: 'MCP, LangChain, OpenAI',
+            rating: '2024 – Presente',
             description:
-              'Desenvolvimento de agentes de IA para automação de processos complexos. Utilização de <span class="color-neon">Python</span>, <span class="color-neon">LangChain</span> e <span class="color-neon">OpenAI API</span> para criar assistentes virtuais especializados.'
+              'Desenvolvimento de agentes de IA e automação de processos. <span class="color-neon">Model Context Protocol (MCP)</span> com FastMCP (Python). Integrações com <span class="color-neon">LangChain</span>, <span class="color-neon">OpenAI API</span> e GPT-4. Apresentei Tech Talk sobre MCP na Gran.'
           },
           {
             id: 2,
-            title: 'APIs REST e Integração',
-            subtitle: 'Integração de Sistemas',
+            title: 'Design Patterns Aplicados',
+            subtitle: 'Padrões de Projeto em Produção',
             rating: '',
             description:
-              'Desenvolvimento de APIs robustas para integração de sistemas. Experiência com <span class="color-neon">REST</span>, <span class="color-neon">FastAPI</span> e <span class="color-neon">Laravel API Resources</span> para criação de microserviços escaláveis.'
+              '<span class="color-neon">Circuit Breaker</span>, <span class="color-neon">Strategy</span>, <span class="color-neon">Chain of Responsibility</span>, Factory, Repository, Dependency Injection. Retry com Exponential Backoff. Aplicação prática em sistemas financeiros críticos para 500k+ usuários.'
           },
           {
             id: 3,
-            title: 'Testes Unitários',
-            subtitle: '',
+            title: 'Testes & Qualidade',
+            subtitle: 'PHPUnit, PEST, Jest',
             rating: '',
             description:
-              'Utilização de testes unitários com <span class="color-neon">PEST</span> e <span class="color-neon">PHPUnit</span> para Laravel e <span class="color-neon">JEST</span> para NodeJs'
+              'Testes unitários com <span class="color-neon">PEST</span> e <span class="color-neon">PHPUnit</span> para Laravel e <span class="color-neon">JEST</span> para Node.js/NestJS. ADRs e RFCs para documentação de decisões técnicas.'
           },
           {
             id: 4,
-            title: 'FrameWorks',
-            subtitle: '',
+            title: 'APIs REST & Integrações',
+            subtitle: 'Oracle ERP, Pagar.me, Equals',
             rating: '',
             description:
-              'Alguns frameworks que vale a pena mencionar minha familiaridade são: <span class="color-neon">AdonisJS, Next.Js</span> e <span class="color-neon">Vue.Js</span>, cujos quais tive a oportunidade de interagir em alguns projetos.'
+              'Integrações com <span class="color-neon">Oracle ERP</span>, Pagar.me, WooCommerce, APIs internas. <span class="color-neon">NestJS</span>, <span class="color-neon">FastAPI</span> e <span class="color-neon">Laravel API Resources</span> para microsserviços escaláveis.'
           },
           {
             id: 5,
-            title: 'Linguagens',
-            subtitle: '',
+            title: 'Frameworks & Linguagens',
+            subtitle: 'Multi-stack',
             rating: '',
             description:
-              'Algumas linguagens que possuo familiaridade são <span class="color-neon">C++, C# </span>e <span class="color-neon">G Code</span>. Utilizei o C# para criar um asistente pessoal para gerenciamento de aparelhos domésticos. E utilizei C++ e G Code para a criação de uma <span class="color-neon">Máquina CNC Router</span>, onde tive o privilégio de contruí-la do zero e pude realizar a programação via <span class="color-neon">Arduino</span>.'
+              '<span class="color-neon">NestJS, AdonisJS, Next.Js, Vue.Js</span>. Navegação entre stack legada (PHP/Laravel) e moderna (Node.js/NestJS/TypeScript) sem atrito. Familiaridade com <span class="color-neon">C++, C#</span> e <span class="color-neon">G Code</span> (CNC Router via Arduino).'
+          },
+          {
+            id: 6,
+            title: 'Servidor & Infraestrutura',
+            subtitle: 'Linux, AWS, Docker',
+            rating: '',
+            description:
+              'Servidor Linux dedicado (Ubuntu/CentOS). <span class="color-neon">AWS</span> (SQS, Lambda, S3, EC2, RDS). <span class="color-neon">Docker</span> e Docker Compose. <span class="color-neon">Serverless Framework</span>. APACHE, FTP, SSH.'
+          },
+          {
+            id: 7,
+            title: 'GPT-4 & Processamento de Docs',
+            subtitle: 'LLMs e OCR',
+            rating: '2024',
+            description:
+              'Chatbots avançados com <span class="color-neon">GPT-4</span> e <span class="color-neon">OpenAI API</span>. Processamento de documentos com <span class="color-neon">OCR + Machine Learning</span> para extração e classificação de dados de formulários e contratos.'
           }
         ]
       }
@@ -563,15 +703,15 @@ const Resumo = [
         id: 'education-section-left',
         section_title: {
           title: 'Formações',
-          subtitle: '2004 - 2023'
+          subtitle: '2004 - 2026'
         },
         items: [
           {
             id: 1,
             title: 'Bacharelado em Inteligência Artificial',
             subtitle: 'Faculdade Anhanguera',
-            rating: 'Cursando - 2024',
-            description: 'Graduação focada em Machine Learning, Deep Learning, Processamento de Linguagem Natural e desenvolvimento de sistemas inteligentes.'
+            rating: 'Cursando - 2024/2028',
+            description: 'Graduação focada em Machine Learning, Deep Learning, Processamento de Linguagem Natural e desenvolvimento de sistemas inteligentes. Aplicação prática de técnicas de ML, NLP e agentes de IA em projetos reais na Gran Cursos Online.'
           },
           {
             id: 2,
@@ -583,16 +723,16 @@ const Resumo = [
           {
             id: 3,
             title: 'Técnico Florestal, Meio Ambiente E Tecnologias Comerciais',
-            subtitle: 'Centro Paula SouzaCentro Paula Souza (2008 - 2010)',
+            subtitle: 'Centro Paula Souza (2008 - 2010)',
             rating: '2010',
             description: 'Formação técnica em agroflorestas e meio ambiente.'
           },
           {
             id: 4,
-            title: 'Ténico em Açucar e Alcool',
-            subtitle: 'Centro Paula SouzaCentro Paula Souza (2008 - 2010)',
+            title: 'Técnico em Açúcar e Álcool',
+            subtitle: 'Centro Paula Souza (2008 - 2010)',
             rating: '2010',
-            description: 'Trabalhos com tecnologias químicas mais voltada para usinas açucareiras, porém com o foco em produção química.'
+            description: 'Trabalhos com tecnologias químicas voltada para usinas açucareiras, com foco em produção química.'
           },
           {
             id: 5,
@@ -606,8 +746,8 @@ const Resumo = [
       {
         id: 'education-section-right',
         section_title: {
-          title: 'Outras Formações',
-          subtitle: '2007 - 2010'
+          title: 'Certificações & Cursos',
+          subtitle: '2001 - 2026'
         },
         items: [
           {
@@ -624,7 +764,7 @@ const Resumo = [
             subtitle: 'IBM - Coursera',
             rating: '2024',
             description:
-              'Certificação em Python aplicado à Ciência de Dados e Inteligência Artificial. Foco em bibliotecas como Pandas, NumPy, Scikit-learn e TensorFlow.'
+              'Certificação em Python aplicado à Ciência de Dados e IA. Foco em Pandas, NumPy, Scikit-learn e TensorFlow.'
           },
           {
             id: 3,
@@ -632,23 +772,31 @@ const Resumo = [
             subtitle: 'Amazon Web Services',
             rating: '2023',
             description:
-              'Certificação fundamental em computação em nuvem AWS. Conhecimento em EC2, S3, Lambda, RDS e outros serviços essenciais da AWS.'
+              'Certificação em computação em nuvem AWS. Conhecimento em EC2, S3, Lambda, SQS, RDS e Serverless Framework.'
           },
           {
             id: 4,
-            title: 'Formação DBA SqlServer 2019, Desenvolvedor Banco de Dados',
-            subtitle: 'Udemy (2021)',
-            rating: '2021',
+            title: 'NestJS & TypeScript',
+            subtitle: 'Formação contínua',
+            rating: '2025',
             description:
-              'Códigos de exames da microsoft aprendidos neste curso:<br> 70-761: Querying Data with Transact-SQL. <br> 70-762: Developing SQL Databases<br> 70-764: Maintaning SQL Databases.'
+              'Aprofundamento em <span class="color-neon">NestJS 10</span>, TypeORM 0.3, TypeScript 5.x aplicado em microsserviços reais como o MS Conciliador (RFC-004) na Gran Cursos Online.'
           },
           {
             id: 5,
-            title: 'Autodidata em tudo o mais.',
-            subtitle: 'Internet das coisas)',
+            title: 'Formação DBA SQL Server 2019',
+            subtitle: 'Udemy (2021)',
+            rating: '2021',
+            description:
+              'Códigos de exames Microsoft: 70-761: Querying Data with Transact-SQL. <br> 70-762: Developing SQL Databases<br> 70-764: Maintaning SQL Databases.'
+          },
+          {
+            id: 6,
+            title: 'Autodidata em tudo o mais',
+            subtitle: 'Aprendizado contínuo',
             rating: '2001+',
             description:
-              'Sempre fui muito curioso e busquei conhecimentos sozinho. Acabei me especializando em programação web na experiência e na pratica sempre estudando as novidades e aprendendo com o rio de informação especializada na internet e aplicando em meus projetos.'
+              'Sempre curioso, busco conhecimento constantemente. Especializado em programação web na experiência prática, estudando novidades e aplicando em projetos reais. Atualmente focado em <span class="color-neon">IA, MCP e agentes inteligentes</span>.'
           }
         ]
       }

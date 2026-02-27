@@ -31,11 +31,11 @@ const page = {
       content: 'Olá, eu sou <span>Jonatas</span>'
     }
   ],
-  animated_texts: ['Full Stack.', 'IA Specialist.', 'Arquiteto de Software.'],
+  animated_texts: ['Full Stack Sênior.', 'IA Specialist.', 'Arquiteto de Software.', 'Especialista em Integrações.'],
   texts: [
     {
       content:
-        'Desenvolvedor Full Stack Sênior com mais de <b style="color: rgb(21,232,111);">14 anos de experiência</b>, especialista em <b>PHP (Laravel)</b> e <b>Python</b>. Atualmente trabalho na <b style="color: rgb(21,232,111);">Gran Cursos Online</b>, uma das maiores EdTechs da América Latina, desenvolvendo sistemas ERP robustos e soluções baseadas em <b>Inteligência Artificial</b>. Cursando graduação em <b>Inteligência Artificial</b> e aplicando técnicas modernas de automação com agentes de IA.'
+        'Desenvolvedor Full Stack Sênior com mais de <b style="color: rgb(21,232,111);">18 anos de experiência</b>, especialista em <b>PHP (Laravel)</b> e <b>Python</b>. Atualmente na <b style="color: rgb(21,232,111);">Gran Cursos Online</b>, uma das maiores EdTechs da América Latina, desenvolvendo sistemas ERP robustos e soluções baseadas em <b>Inteligência Artificial</b> para mais de <b style="color: rgb(21,232,111);">500 mil alunos ativos</b>. Cursando graduação em <b>Inteligência Artificial</b> e aplicando técnicas modernas de ML, NLP e agentes de IA em projetos reais. Premiado com o <b style="color: rgb(21,232,111);">Gran Pix</b> pelo impacto na conciliação financeira.'
     }
   ],
   socials: [
@@ -97,6 +97,14 @@ const page = {
       image: {
         src: '../imgs/nodejs.png',
         alt: 'NodeJS'
+      }
+    },
+    {
+      id: 6,
+      title: 'TypeScript',
+      image: {
+        src: '../imgs/typescript.png',
+        alt: 'TypeScript'
       }
     }
   ],
