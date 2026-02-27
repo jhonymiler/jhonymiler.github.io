@@ -35,7 +35,7 @@ const page = {
   texts: [
     {
       content:
-        'Desenvolvedor Full Stack Sênior com mais de <b style="color: rgb(21,232,111);">18 anos de experiência</b>, especialista em <b>PHP (Laravel)</b> e <b>Python</b>. Atualmente na <b style="color: rgb(21,232,111);">Gran Cursos Online</b>, uma das maiores EdTechs da América Latina, desenvolvendo sistemas ERP robustos e soluções baseadas em <b>Inteligência Artificial</b> para mais de <b style="color: rgb(21,232,111);">500 mil alunos ativos</b>. Cursando graduação em <b>Inteligência Artificial</b> e aplicando técnicas modernas de ML, NLP e agentes de IA em projetos reais. Premiado com o <b style="color: rgb(21,232,111);">Gran Pix</b> pelo impacto na conciliação financeira.'
+        'Desenvolvedor Full Stack Sênior com mais de <b style="color: rgb(21,232,111);">18 anos de experiência</b>, especialista em <b>PHP (Laravel)</b> e <b>Python</b>. Atualmente na <b style="color: rgb(21,232,111);">Gran Cursos Online</b>, uma das maiores EdTechs da América Latina, desenvolvendo sistemas ERP robustos e soluções baseadas em <b>Inteligência Artificial</b> para mais de <b style="color: rgb(21,232,111);">500 mil alunos ativos</b>. Cursando graduação em <b>Inteligência Artificial</b> e aplicando técnicas modernas de ML, NLP e agentes de IA em projetos reais. Premiado internamente pelo impacto na <b style="color: rgb(21,232,111);">conciliação financeira</b> da empresa.'
     }
   ],
   socials: [

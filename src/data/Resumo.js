@@ -25,47 +25,47 @@ const Resumo = [
             subtitle: 'Gran Cursos Online',
             rating: '2023 – Presente',
             description:
-              'Atuação no squad de integrações (Backoffice ERP) responsável por toda a comunicação entre sistemas internos e parceiros externos (<span class="color-neon">Oracle ERP</span>, adquirentes, fornecedores financeiros) para mais de <span class="color-neon">500 mil alunos ativos</span>. Principais entregas: <b>Diferimento 2.0</b> (AWS SQS + Lambda), <b>ResilientHttpClient</b> (Circuit Breaker + Retry), <b>RFC-004 MS Conciliador</b> (NestJS/TypeORM), <b>Tech Talk MCP</b>. Premiado com o <span class="color-neon">Gran Pix</span> pelo impacto na conciliação financeira.'
+              'Squad responsável pela camada de integração entre sistemas internos e parceiros externos (ERP, adquirentes, fornecedores financeiros) para mais de <span class="color-neon">500 mil alunos ativos</span>. Arquitetura de microsserviços, filas assíncronas com <span class="color-neon">AWS SQS + Lambda</span>, padrões de resiliência (Circuit Breaker, Retry) e observabilidade com <span class="color-neon">Datadog</span>. Premiado com o <span class="color-neon">Gran Pix</span> pelo impacto na área financeira.'
           },
           {
             id: 9,
-            title: 'Análise de Diferimento — R$100k → R$5k',
-            subtitle: 'Gran Cursos Online (Projeto próprio)',
+            title: 'Redução de Divergência Financeira',
+            subtitle: 'Gran Cursos Online — Projeto de autoria própria',
             rating: '2024 – Presente',
             description:
-              'Idealizei e construí sistema que roda diariamente, cruzando dados de pagamentos e diferimentos com <span class="color-neon">9 validadores</span> em cadeia (Chain of Responsibility). Gera relatórios XLSX e 3 dashboards <span class="color-neon">Streamlit</span>. Reduziu divergência financeira de ~R$100k para ~R$5k em volume de R$60 milhões/mês (eficiência <span class="color-neon">99,99%</span>). Stack: Python 3.12, pandas, Streamlit, MySQL, S3, Docker.'
+              'Idealizei e construí sistema de monitoramento financeiro diário que cruza dados de pagamentos e faturamento com validadores em cadeia. Reduziu divergência de <span class="color-neon">~R$ 100 mil para ~R$ 5 mil</span> em um volume de R$ 60 milhões/mês, alcançando eficiência de <span class="color-neon">99,99%</span>. Stack: Python, pandas, Streamlit, MySQL, S3, Docker.'
           },
           {
             id: 10,
-            title: 'Conciliação de Vendas — Prêmio Gran Pix',
-            subtitle: 'Gran Cursos Online (Projeto próprio)',
+            title: 'Conciliação de Vendas — 90% → 100%',
+            subtitle: 'Gran Cursos Online — Projeto de autoria própria',
             rating: '2024 – Presente',
             description:
-              'CLI em <span class="color-neon">Python</span> que rastreia cada transação (TID) em 3 sistemas distintos usando <span class="color-neon">Chain of Responsibility</span> com busca assíncrona (aioboto3, pool de 50 conexões). Elevou taxa de conciliação de ~90% para <span class="color-neon">100%</span>, desbloqueando relatórios confiáveis para investidores (BTG). Reconhecido com o <span class="color-neon">Prêmio Gran Pix</span>.'
+              'Ferramenta CLI em <span class="color-neon">Python</span> que rastreia transações em 3 sistemas distintos com busca assíncrona. Elevou a taxa de conciliação de ~90% para <span class="color-neon">100%</span>, viabilizando relatórios confiáveis para investidores. Trabalho reconhecido com <span class="color-neon">premiação interna</span> pelo impacto na empresa.'
           },
           {
             id: 11,
-            title: 'RFC-004 — MS Conciliador (Equals)',
+            title: 'Arquitetura de Microsserviço de Conciliação',
             subtitle: 'Gran Cursos Online',
             rating: '2025 – Presente',
             description:
-              'Responsável técnico do RFC e arquitetura completa do microsserviço em <span class="color-neon">NestJS + TypeORM + TypeScript</span>. 3 Jobs independentes integrando 4 fontes de dados. Tabela agnóstica de fornecedor com <span class="color-neon">Strategy Pattern</span>. ADR-001: MySQL vs DynamoDB. Identificação de 6 gaps críticos de segurança (PCI/PII).'
+              'Responsável técnico pela proposta e arquitetura completa de microsserviço em <span class="color-neon">NestJS + TypeORM + TypeScript</span>. Integração de 4 fontes de dados, design agnóstico de fornecedor com <span class="color-neon">Strategy Pattern</span>, e decisão documentada entre MySQL e DynamoDB. Identifiquei gaps críticos de segurança antes da aprovação.'
           },
           {
             id: 12,
-            title: 'ResilientHttpClient — Resiliência Proativa',
+            title: 'Padrões de Resiliência em APIs',
             subtitle: 'Gran Cursos Online',
             rating: '2025',
             description:
-              'Análise proativa de 9 módulos da API de integração — 8 sem padrões de resiliência. Implementei <span class="color-neon">Circuit Breaker</span>, <span class="color-neon">Retry Exponencial</span>, Timeout configurável e logging estruturado para <span class="color-neon">Datadog</span>. Eliminação de inconsistências financeiras causadas por falhas silenciosas.'
+              'Análise proativa de 9 módulos de integração revelou que a maioria não possuía padrões de resiliência. Implementei solução compartilhada com <span class="color-neon">Circuit Breaker</span>, <span class="color-neon">Retry Exponencial</span>, timeout configurável e logging estruturado para <span class="color-neon">Datadog</span>. Eliminação de falhas silenciosas em operações financeiras.'
           },
           {
             id: 13,
-            title: 'Integration Contract Validator',
-            subtitle: 'Gran Cursos Online (Projeto próprio)',
+            title: 'Validador de Faturas em Escala',
+            subtitle: 'Gran Cursos Online — Projeto de autoria própria',
             rating: '2024 – 2025',
             description:
-              'Sistema com interface reativa (<span class="color-neon">Livewire 3</span>) que processa centenas de milhares de faturas/mês em batch (Horizon/Redis), classificando motivos de não-integração. Evoluiu para validação diretamente no pipeline de integração com resiliência inteligente. Stack: Laravel 10, PHP 8.2, Livewire 3, Horizon, Redis, WebSockets.'
+              'Sistema com interface reativa que processa centenas de milhares de faturas/mês em batch, classificando motivos de falha. Evoluiu para validação inteligente no pipeline de integração com resiliência automática. Stack: <span class="color-neon">Laravel</span>, Livewire, Horizon, Redis, WebSockets.'
           },
           {
             id: 2,
@@ -129,43 +129,43 @@ const Resumo = [
         items: [
           {
             id: 8,
-            title: 'Auditor de Diferimento 2.0',
-            subtitle: 'Gran Cursos Online (Projeto próprio)',
+            title: 'Auditor de Migração Contábil',
+            subtitle: 'Gran Cursos Online — Projeto de autoria própria',
             rating: '2024 – Presente',
             description:
-              'Sistema com <span class="color-neon">12 validadores</span> em cadeia (Chain of Responsibility) que comparam cada campo entre versão legada e nova do motor de diferimento contábil. Processamento em batch (chunks de 10k) com <span class="color-neon">Horizon</span> e dashboards no <span class="color-neon">Grafana</span>. Stack: Laravel 12, PHP 8.2, Horizon, Redis, Grafana, Prometheus.'
+              'Sistema de auditoria com 12 validadores em cadeia para comparação contrato a contrato entre sistema legado e novo motor contábil. Processamento em batch com dashboards no <span class="color-neon">Grafana</span> para monitoramento contínuo. Stack: Laravel, Horizon, Redis, Grafana, Prometheus.'
           },
           {
             id: 9,
-            title: 'Contingência Reforma Tributária',
+            title: 'Mitigação de Risco Fiscal (> R$ 5 milhões)',
             subtitle: 'Gran Cursos Online',
             rating: '2026',
             description:
-              'Risco de <span class="color-neon">> R$ 5 milhões</span> mitigado. Prefeitura de Curitiba bloqueou emissão de NFs retroativas afetando 5.571 transações. Gerei payloads de contingência com data ajustada e sufixo .R no transaction number. Risco legal e financeiro <span class="color-neon">eliminado</span>. Jira: BOIIF-1687 (Highest).'
+              'Atuação emergencial em mudança regulatória que bloqueou emissão de notas fiscais retroativas, afetando milhares de transações. Gerei payloads de contingência com regras específicas, eliminando risco legal e financeiro de <span class="color-neon">mais de R$ 5 milhões</span>.'
           },
           {
             id: 10,
-            title: 'Automação de Estornos',
-            subtitle: 'Gran Cursos Online (Projeto próprio)',
+            title: 'Automação de Estornos Fiscais',
+            subtitle: 'Gran Cursos Online — Projeto de autoria própria',
             rating: '2024 – Presente',
             description:
-              'Sistema com 2 módulos: relatório analítico e executor de estornos. Processamento paralelo com <span class="color-neon">8 workers</span>, transações atômicas, modo simulação por padrão. Impediu geração de NFs a maior de contratos cancelados, economizando <span class="color-neon">milhares em impostos</span>. Stack: Python, MySQL, ProcessPoolExecutor.'
+              'Sistema com relatório analítico e executor de estornos com processamento paralelo e transações atômicas. Modo simulação por padrão para segurança em produção. Impediu geração de notas fiscais indevidas, economizando <span class="color-neon">milhares em impostos</span>. Stack: Python, MySQL.'
           },
           {
             id: 11,
-            title: 'Diferimento 2.0 — ADR001',
+            title: 'Arquitetura Event-Driven Assíncrona',
             subtitle: 'Gran Cursos Online',
             rating: '2024 – 2025',
             description:
-              'Transformei job batch síncrono em arquitetura <span class="color-neon">event-driven assíncrona</span>. ADR aprovada pelo time de arquitetura. Fila <span class="color-neon">AWS SQS</span>, <span class="color-neon">Lambda</span> (Serverless Framework), 3 tentativas com backoff exponencial, <span class="color-neon">DLQ</span> com alerta Slack e webhook bidirecional de callback.'
+              'Propus e implementei migração de processamento batch síncrono para arquitetura <span class="color-neon">event-driven assíncrona</span> com <span class="color-neon">AWS SQS</span> e <span class="color-neon">Lambda</span>. Retry com backoff exponencial, dead-letter queue com alertas automáticos e webhooks de callback. Decisão formalizada e aprovada pelo time de arquitetura.'
           },
           {
             id: 12,
-            title: 'Tech Talk: MCP na Prática',
+            title: 'Tech Talk: IA e Automação com MCP',
             subtitle: 'Gran Cursos Online',
             rating: '2025',
             description:
-              'Apresentei internamente o <span class="color-neon">Model Context Protocol (MCP)</span> — protocolo que conecta LLMs a ferramentas externas. Demo com <span class="color-neon">FastMCP</span> (Python), integrações com Git, Jira e Bitbucket. Exemplo de MCP de Pagamentos aplicado ao contexto da empresa.'
+              'Apresentei para a empresa o <span class="color-neon">Model Context Protocol</span> — padrão que conecta modelos de IA a ferramentas e sistemas externos. Demonstrações práticas com <span class="color-neon">Python</span>, integrações com Git e ferramentas de gestão de projeto.'
           },
           {
             id: 1,
@@ -193,11 +193,11 @@ const Resumo = [
           },
           {
             id: 13,
-            title: 'Integration Front — Painel Financeiro',
+            title: 'Painel Administrativo Financeiro',
             subtitle: 'Gran Cursos Online',
             rating: '2023 – Presente',
             description:
-              'Principal contribuidor (<span class="color-neon">163/414 commits, 39%</span>) do painel administrativo em <span class="color-neon">React 18 + TypeScript + Vite</span>. 12 releases. Ferramenta utilizada diariamente pelo time financeiro da Gran.'
+              'Principal contribuidor do painel administrativo em <span class="color-neon">React 18 + TypeScript + Vite</span>. Ferramenta utilizada diariamente pelo time financeiro para gestão e monitoramento de integrações.'
           }
         ]
       }
@@ -575,10 +575,10 @@ const Resumo = [
         items: [
           {
             id: 1,
-            title: 'ADRs & RFCs',
-            subtitle: 'Decisões Arquiteturais Documentadas',
+            title: 'Decisões Arquiteturais',
+            subtitle: 'ADRs & RFCs em Produção',
             rating: '2024 – Presente',
-            description: 'Proponho e defendo Architectural Decision Records e Requests for Comments. <span class="color-neon">ADR001</span> (Diferimento Assíncrono com AWS SQS + Lambda) aprovada pelo time de arquitetura. <span class="color-neon">RFC-004</span> (MS Conciliador) em v4.0 com 6 gaps de segurança identificados.'
+            description: 'Proponho e defendo Architectural Decision Records e Requests for Comments em ambiente corporativo. Decisões como migração para arquitetura assíncrona e escolha de banco de dados para dados financeiros aprovadas pelo time de arquitetura. Identificação proativa de gaps de segurança antes da aprovação.'
           },
           {
             id: 2,
@@ -640,7 +640,7 @@ const Resumo = [
             subtitle: 'MCP, LangChain, OpenAI',
             rating: '2024 – Presente',
             description:
-              'Desenvolvimento de agentes de IA e automação de processos. <span class="color-neon">Model Context Protocol (MCP)</span> com FastMCP (Python). Integrações com <span class="color-neon">LangChain</span>, <span class="color-neon">OpenAI API</span> e GPT-4. Apresentei Tech Talk sobre MCP na Gran.'
+              'Desenvolvimento de agentes de IA e automação de processos. Experiência com <span class="color-neon">Model Context Protocol (MCP)</span> usando Python, além de <span class="color-neon">LangChain</span> e <span class="color-neon">OpenAI API</span> (GPT-4). Apresentação de Tech Talk sobre IA e automação em ambiente corporativo.'
           },
           {
             id: 2,
@@ -656,15 +656,15 @@ const Resumo = [
             subtitle: 'PHPUnit, PEST, Jest',
             rating: '',
             description:
-              'Testes unitários com <span class="color-neon">PEST</span> e <span class="color-neon">PHPUnit</span> para Laravel e <span class="color-neon">JEST</span> para Node.js/NestJS. ADRs e RFCs para documentação de decisões técnicas.'
+              'Testes unitários com <span class="color-neon">PEST</span> e <span class="color-neon">PHPUnit</span> para Laravel e <span class="color-neon">JEST</span> para Node.js/NestJS. Documentação de decisões técnicas com ADRs e RFCs.'
           },
           {
             id: 4,
             title: 'APIs REST & Integrações',
-            subtitle: 'Oracle ERP, Pagar.me, Equals',
+            subtitle: 'ERP, Gateways, APIs Externas',
             rating: '',
             description:
-              'Integrações com <span class="color-neon">Oracle ERP</span>, Pagar.me, WooCommerce, APIs internas. <span class="color-neon">NestJS</span>, <span class="color-neon">FastAPI</span> e <span class="color-neon">Laravel API Resources</span> para microsserviços escaláveis.'
+              'Integrações com sistemas ERP, gateways de pagamento e APIs externas. Experiência com <span class="color-neon">NestJS</span>, <span class="color-neon">FastAPI</span> e <span class="color-neon">Laravel API Resources</span> para criação de microsserviços escaláveis.'
           },
           {
             id: 5,
@@ -780,7 +780,7 @@ const Resumo = [
             subtitle: 'Formação contínua',
             rating: '2025',
             description:
-              'Aprofundamento em <span class="color-neon">NestJS 10</span>, TypeORM 0.3, TypeScript 5.x aplicado em microsserviços reais como o MS Conciliador (RFC-004) na Gran Cursos Online.'
+              'Aprofundamento em <span class="color-neon">NestJS</span>, TypeORM e TypeScript aplicados em microsserviços reais com integração de múltiplas fontes de dados e padrões como Strategy e Repository.'
           },
           {
             id: 5,
