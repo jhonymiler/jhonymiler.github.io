@@ -2,12 +2,5 @@
   "name": "jhonymiler-site",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://jhonymiler.github.io",
-  "scripts": {
-    "predeploy": "rm -rf build && mkdir -p build && cp index.html styles.css build/ && cp -r assets build/ && cp -r uploads build/",
-    "deploy": "gh-pages -d build --dotfiles"
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  }
+  "homepage": "https://jhonymiler.github.io"
 }
