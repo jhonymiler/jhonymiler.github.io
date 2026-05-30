@@ -1,6 +1,2 @@
-node_modules
-.vscode
-build
-yarn.lock
-.env
-Jhony Projetos Gran
+*.zip
+node_modules/
