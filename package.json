@@ -5,11 +5,10 @@
   "type": "module",
   "homepage": "https://jhonymiler.github.io",
   "scripts": {
-    "predeploy": "vite build",
-    "deploy": "gh-pages -d build -t",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "predeploy": "rm -rf build && mkdir -p build && cp index.html styles.css build/ && cp -r assets build/",
+    "deploy": "gh-pages -d build --dotfiles",
+    "dev": "npx serve .",
+    "build": "npm run predeploy"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.10.1",

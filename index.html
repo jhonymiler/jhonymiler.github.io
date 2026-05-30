@@ -1,20 +1,764 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light" data-density="regular">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Jonatas Miler</title>
-  <meta name="description" content="Página dinâmica de curriculum - Jonatas Miler">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jonatas Miler — Engenheiro de Software Sênior</title>
+<meta name="description" content="Engenheiro de Software Full Stack Sênior. Especialista em integrações e sistemas financeiros críticos. 18+ anos transformando regras de negócio em sistemas que protegem dinheiro de verdade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
-  
-  <div id="root"></div>
- 
-  <script type="module" src="./src/main.jsx"></script>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Jonatas Miler — início">
+    <span class="dot"></span>
+    <span>Jonatas Miler</span>
+    <span class="role">/ Eng. de Software Sênior</span>
+  </a>
+  <nav class="links" id="navlinks">
+    <a href="#sobre">Sobre</a>
+    <a href="#numeros">Números</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#projetos">Open Source</a>
+    <a href="#skills">Skills</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <a class="nav-cta" href="mailto:jonatasmiler@gmail.com">Falar comigo</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero band-hero">
+  <div class="mesh"></div>
+  <div class="grid-bg"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <span class="status-pill"><span class="live"></span>Disponível para novos desafios · remoto</span>
+        <span class="eyebrow hero-eyebrow">Full Stack · Integrações · IA · Open Source</span>
+        <h1>
+          Olá, eu sou <span class="name">Jonatas</span>.<br>
+          <span class="lead">Eu construo os sistemas que outras pessoas têm medo de tocar.</span>
+        </h1>
+        <span class="rotator" id="rotator" aria-hidden="true">
+          <span class="track">
+            <span>Full Stack Sênior</span>
+            <span>Especialista em Integrações</span>
+            <span>Arquiteto de Software</span>
+            <span>IA &amp; MCP Specialist</span>
+            <span>Open Source Maintainer</span>
+            <span>Full Stack Sênior</span>
+          </span>
+        </span>
+        <p class="hero-support">
+          Há mais de <strong>18 anos</strong> eu transformo regras de negócio complicadas em sistemas
+          que simplesmente funcionam. Já passei por governo federal, contabilidade fiscal, indústria e EdTech —
+          construindo desde <strong>integrações</strong> e <strong>arquiteturas distribuídas</strong> até
+          <strong>ferramentas de IA</strong> e projetos <strong>open source</strong> publicados.
+          Programo em <strong>Python</strong>, <strong>PHP/Laravel</strong> e <strong>TypeScript/NestJS</strong>,
+          aplico <strong>IA &amp; MCP</strong> em problemas reais e mantenho mais de <strong>45 repositórios</strong> públicos.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#numeros">Ver meu impacto <span class="arr">→</span></a>
+          <a class="btn btn-ghost" href="https://github.com/jhonymiler" target="_blank" rel="noopener">Ver no GitHub</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Piracicaba/SP — aberto a remoto</span>
+          <a href="mailto:jonatasmiler@gmail.com">✉ jonatasmiler@gmail.com</a>
+          <a href="https://linkedin.com/in/jhonymiler" target="_blank" rel="noopener">in/jhonymiler</a>
+          <a href="https://github.com/jhonymiler" target="_blank" rel="noopener">github/jhonymiler</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="portrait has-photo">
+          <img src="assets/jonatas.png" alt="Jonatas Miler" class="portrait-img">
+          <span class="frame-tag">jonatas_miler.jpg</span>
+          <span class="corner c1"></span>
+          <span class="corner c2"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TECH MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span class="item">Python</span><span class="item">PHP / Laravel</span><span class="item">TypeScript</span><span class="item">NestJS</span><span class="item">React</span><span class="item">Node.js</span><span class="item">FastAPI</span><span class="item">AWS</span><span class="item">Docker</span><span class="item">Kubernetes</span><span class="item">LangChain</span><span class="item">MCP</span><span class="item">PostgreSQL</span><span class="item">Redis</span><span class="item">Next.js</span><span class="item">Datadog</span>
+    <span class="item">Python</span><span class="item">PHP / Laravel</span><span class="item">TypeScript</span><span class="item">NestJS</span><span class="item">React</span><span class="item">Node.js</span><span class="item">FastAPI</span><span class="item">AWS</span><span class="item">Docker</span><span class="item">Kubernetes</span><span class="item">LangChain</span><span class="item">MCP</span><span class="item">PostgreSQL</span><span class="item">Redis</span><span class="item">Next.js</span><span class="item">Datadog</span>
+  </div>
+</div>
+<section class="numbers" id="numeros">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <div class="section-label">01 — Provas de impacto</div>
+        <h2>Não falo de tecnologia. Falo de resultado mensurável.</h2>
+      </div>
+      <p>Cada número vem do histórico real — de sistemas em produção a projetos open source publicados.</p>
+    </div>
+    <div class="stat-grid reveal" id="statGrid">
+      <div class="stat"><div class="fig" data-to="18" data-suffix="+">0</div><div class="desc">anos de experiência em desenvolvimento de software</div></div>
+      <div class="stat"><div class="fig" data-to="45" data-suffix="+">0</div><div class="desc">repositórios open source públicos no GitHub</div></div>
+      <div class="stat"><div class="fig" data-to="500" data-suffix=" mil+">0</div><div class="desc">usuários impactados pelos sistemas que mantenho</div></div>
+      <div class="stat"><div class="fig" data-to="6.6" data-suffix=" bi" data-dec="1">0</div><div class="desc">números/min processados em Python no Desafio SigmaGeek</div></div>
+      <div class="stat"><div class="fig"><span class="unit">📦</span> npm·PyPI</div><div class="desc">pacotes open source publicados (AXIS, Cortex, MCP)</div></div>
+      <div class="stat"><div class="fig" data-to="99.99" data-suffix="%" data-dec="2">0</div><div class="desc">de eficiência alcançada na conciliação financeira</div></div>
+      <div class="stat"><div class="fig" data-to="4" data-suffix=" mi">0</div><div class="desc">de arquivos fiscais recuperados via automação</div></div>
+      <div class="stat"><div class="fig"><span class="unit">+R$</span> <span data-to="5" data-suffix=" mi">0</span></div><div class="desc">em risco fiscal eliminado em uma única atuação emergencial</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section class="band" id="sobre">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">02</div>
+      <div class="htext">
+        <h2 class="section-title">Quem está por trás <em>do código</em></h2>
+      </div>
+    </div>
+    <div class="sobre-grid">
+      <div class="sobre-prose reveal">
+        <p>Eu não me apaixonei por programação por causa da sintaxe. Me apaixonei pela sensação de pegar um processo manual, caro e propenso a erro — e transformá-lo em algo automático, confiável e à prova de falhas.</p>
+        <p>Comecei cedo, como autodidata curioso, e nunca parei de aprender. Em quase duas décadas passei por governo federal, contabilidade fiscal, indústria e EdTech, sempre no mesmo papel: o engenheiro que entra onde o problema é crítico e sai deixando o sistema mais resiliente do que encontrou.</p>
+        <p>Hoje meu território favorito é a <em>engenharia de integrações e sistemas financeiros</em> — o tipo de software onde um bug não gera um "ops", gera um prejuízo. É exatamente por isso que eu gosto: porque exige arquitetura sólida, padrões de resiliência, observabilidade real e uma obsessão por detalhe que poucos têm paciência de manter.</p>
+        <p>Em paralelo, curso <strong>Bacharelado em Inteligência Artificial</strong> e levo IA para dentro da empresa — de agentes e automação com MCP a processamento inteligente de documentos. Para mim, IA não é hype: é mais uma ferramenta para resolver o problema de sempre, com menos esforço humano.</p>
+      </div>
+      <div class="values reveal">
+        <div class="value"><div class="vk">01</div><div><h4>Impacto antes de tecnologia</h4><p>Eu escolho a stack que resolve o problema, não a que está na moda.</p></div></div>
+        <div class="value"><div class="vk">02</div><div><h4>Resiliência por padrão</h4><p>Circuit Breaker, retry, observabilidade e fallback não são "extras" — são o básico em sistemas que lidam com dinheiro.</p></div></div>
+        <div class="value"><div class="vk">03</div><div><h4>Decisão documentada</h4><p>ADRs e RFCs porque boas decisões precisam sobreviver à pessoa que as tomou.</p></div></div>
+        <div class="value"><div class="vk">04</div><div><h4>Iniciativa</h4><p>Boa parte do meu maior impacto veio de projetos que ninguém pediu — eu vi o problema e construí a solução.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIÊNCIA ================= -->
+<section class="band" id="experiencia">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">03</div>
+      <div class="htext">
+        <h2 class="section-title">Reescrita por <em>conquista e impacto</em></h2>
+        <p>Cada item no formato contexto → ação → resultado. Filtre por aquilo que importa para você.</p>
+      </div>
+    </div>
+
+    <div class="exp-filters reveal" id="expFilters">
+      <button class="chip active" data-filter="all">Todos <span class="ct">17</span></button>
+      <button class="chip" data-filter="grancursos">Gran Cursos <span class="ct">12</span></button>
+      <button class="chip" data-filter="proprio">Projetos próprios <span class="ct">5</span></button>
+      <button class="chip" data-filter="trajetoria">Trajetória <span class="ct">5</span></button>
+    </div>
+
+    <div class="timeline" id="timeline">
+
+      <article class="exp reveal" data-cat="grancursos">
+        <div class="when">2023 — Presente<span class="now">Atual</span></div>
+        <div class="body">
+          <div class="titleline"><h3>Desenvolvedor Sênior de Integrações</h3></div>
+          <div class="co">Gran Cursos Online <span class="at">· EdTech</span></div>
+          <p class="desc">Responsável técnico pela camada que conecta os sistemas internos a parceiros externos — ERPs, adquirentes e fornecedores financeiros — para uma base de <strong>500 mil alunos ativos</strong>. Desenho a arquitetura de microsserviços, processamento assíncrono com <span class="hl">AWS SQS + Lambda</span> e padrões de resiliência (Circuit Breaker, Retry) com observabilidade completa em <span class="hl">Datadog</span>. Trabalho reconhecido com o <strong>Gran Pix</strong>, premiação interna de impacto.</p>
+          <div class="why"><b>Por que importa</b>É a engenharia que garante que o dinheiro entre, seja conciliado e nunca se perca no caminho.</div>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="grancursos proprio">
+        <div class="when">2024 — Presente</div>
+        <div class="body">
+          <div class="titleline"><h3>Redução de Divergência Financeira</h3><span class="badge-own">Autoria própria</span></div>
+          <div class="co">Gran Cursos Online</div>
+          <p class="desc">Identifiquei que a empresa convivia com uma divergência financeira mensal relevante e resolvi atacá-la por conta própria. Idealizei e construí um sistema de monitoramento diário que cruza pagamentos e faturamento com validadores em cadeia. Resultado: a divergência caiu de <span class="hl">~R$ 100 mil para ~R$ 5 mil</span> sobre um volume de <strong>R$ 60 milhões/mês</strong> — eficiência de <strong>99,99%</strong>.</p>
+          <div class="stack"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Streamlit</span><span class="tag">MySQL</span><span class="tag">S3</span><span class="tag">Docker</span></div>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="grancursos proprio">
+        <div class="when">2024 — Presente</div>
+        <div class="body">
+          <div class="titleline"><h3>Conciliação de Vendas: 90% → 100%</h3><span class="badge-own">Autoria própria</span></div>
+          <div class="co">Gran Cursos Online</div>
+          <p class="desc">Desenvolvi uma ferramenta CLI em <span class="hl">Python</span> que rastreia cada transação em 3 sistemas distintos com busca assíncrona. A taxa de conciliação subiu de ~90% para <strong>100%</strong>, viabilizando relatórios financeiros confiáveis para investidores. O impacto rendeu <strong>premiação interna</strong>.</p>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="grancursos">
+        <div class="when">2026</div>
+        <div class="body">
+          <div class="titleline"><h3>Mitigação de Risco Fiscal: +R$ 5 milhões</h3></div>
+          <div class="co">Gran Cursos Online</div>
+          <p class="desc">Quando uma mudança regulatória bloqueou a emissão de notas fiscais retroativas e ameaçou milhares de transações, atuei em modo emergencial. Gerei payloads de contingência com regras específicas e <span class="hl">eliminei um risco legal e financeiro de mais de R$ 5 milhões</span>.</p>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="grancursos">
+        <div class="when">2025 — Presente</div>
+        <div class="body">
+          <div class="titleline"><h3>Arquitetura de Microsserviço de Conciliação</h3></div>
+          <div class="co">Gran Cursos Online</div>
+          <p class="desc">Responsável técnico pela proposta e arquitetura completa de um microsserviço em <span class="hl">NestJS + TypeORM + TypeScript</span>: integração de 4 fontes de dados, design agnóstico de fornecedor com <strong>Strategy Pattern</strong> e decisão documentada entre MySQL e DynamoDB. Identifiquei gaps críticos de segurança <strong>antes</strong> da aprovação.</p>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="grancursos">
+        <div class="when">2024 — 2025</div>
+        <div class="body">
+          <div class="titleline"><h3>Arquitetura Event-Driven Assíncrona</h3></div>
+          <div class="co">Gran Cursos Online</div>
+          <p class="desc">Propus e implementei a migração de um processamento batch síncrono para uma arquitetura <span class="hl">event-driven assíncrona</span> com AWS SQS + Lambda: retry com backoff exponencial, dead-letter queue com alertas automáticos e webhooks de callback. Decisão formalizada e aprovada pelo time de arquitetura.</p>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="grancursos">
+        <div class="when">2025</div>
+        <div class="body">
+          <div class="titleline"><h3>Padrões de Resiliência em APIs</h3></div>
+          <div class="co">Gran Cursos Online</div>
+          <p class="desc">Uma análise proativa de 9 módulos de integração revelou que a maioria não tinha proteção alguma contra falhas. Implementei uma solução compartilhada com <span class="hl">Circuit Breaker</span>, Retry Exponencial, timeout configurável e logging estruturado para Datadog — eliminando falhas silenciosas em operações financeiras.</p>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="grancursos proprio">
+        <div class="when">2024 — 2025</div>
+        <div class="body">
+          <div class="titleline"><h3>Validador de Faturas em Escala</h3><span class="badge-own">Autoria própria</span></div>
+          <div class="co">Gran Cursos Online</div>
+          <p class="desc">Construí um sistema com interface reativa que processa <strong>centenas de milhares de faturas por mês</strong> em batch, classificando os motivos de falha. Evoluiu para validação inteligente dentro do pipeline de integração, com resiliência automática.</p>
+          <div class="stack"><span class="tag">Laravel</span><span class="tag">Livewire</span><span class="tag">Horizon</span><span class="tag">Redis</span><span class="tag">WebSockets</span></div>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="grancursos proprio">
+        <div class="when">2024 — Presente</div>
+        <div class="body">
+          <div class="titleline"><h3>Auditor de Migração Contábil</h3><span class="badge-own">Autoria própria</span></div>
+          <div class="co">Gran Cursos Online</div>
+          <p class="desc">Sistema de auditoria com <span class="hl">12 validadores em cadeia</span> que compara contrato a contrato entre o sistema legado e o novo motor contábil. Processamento em batch com dashboards no Grafana para monitoramento contínuo.</p>
+          <div class="stack"><span class="tag">Laravel</span><span class="tag">Horizon</span><span class="tag">Redis</span><span class="tag">Grafana</span><span class="tag">Prometheus</span></div>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="grancursos proprio">
+        <div class="when">2024 — Presente</div>
+        <div class="body">
+          <div class="titleline"><h3>Automação de Estornos Fiscais</h3><span class="badge-own">Autoria própria</span></div>
+          <div class="co">Gran Cursos Online</div>
+          <p class="desc">Sistema com relatório analítico e executor de estornos com processamento paralelo e transações atômicas — com modo simulação por padrão para segurança em produção. Impediu a geração de notas fiscais indevidas, economizando <strong>milhares em impostos</strong>.</p>
+          <div class="stack"><span class="tag">Python</span><span class="tag">MySQL</span></div>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="grancursos">
+        <div class="when">2023 — Presente</div>
+        <div class="body">
+          <div class="titleline"><h3>Painel Administrativo Financeiro</h3></div>
+          <div class="co">Gran Cursos Online</div>
+          <p class="desc">Principal contribuidor do painel administrativo em <span class="hl">React 18 + TypeScript + Vite</span>, usado diariamente pelo time financeiro para gestão e monitoramento das integrações.</p>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="grancursos">
+        <div class="when">2025</div>
+        <div class="body">
+          <div class="titleline"><h3>Tech Talk: IA e Automação com MCP</h3></div>
+          <div class="co">Gran Cursos Online</div>
+          <p class="desc">Apresentei para a empresa o <span class="hl">Model Context Protocol</span> — o padrão que conecta modelos de IA a ferramentas e sistemas externos — com demonstrações práticas em Python integradas a Git e ferramentas de gestão de projeto.</p>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="trajetoria">
+        <div class="when">2023 — 2024</div>
+        <div class="body">
+          <div class="titleline"><h3>Desenvolvedor Full Stack</h3></div>
+          <div class="co">Sigma Dataserv</div>
+          <p class="desc">Desenvolvimento de aplicações web e soluções especializadas em <span class="hl">PHP</span> e <span class="hl">Python</span>, com foco em automação e integração de sistemas distribuídos.</p>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="trajetoria">
+        <div class="when">2023</div>
+        <div class="body">
+          <div class="titleline"><h3>Consultor de TI</h3></div>
+          <div class="co">Office Web</div>
+          <p class="desc">Consultoria em desenvolvimento web com <span class="hl">Laravel, React e Node.js</span>, focada em arquitetura de software e boas práticas.</p>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="trajetoria">
+        <div class="when">2022</div>
+        <div class="body">
+          <div class="titleline"><h3>Desenvolvedor — Governo Federal</h3></div>
+          <div class="co">Ministério do Desenvolvimento</div>
+          <p class="desc">Criação de funcionalidades e manutenção em sistemas governamentais como SELESAN, SELEMOB e SINISA, em <span class="hl">PHP</span> com integração ao GOV.br. Também criei esteiras de produção com <span class="hl">Kubernetes/Rancher</span> aplicando práticas de DevOps.</p>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="trajetoria">
+        <div class="when">2021 — 2022</div>
+        <div class="body">
+          <div class="titleline"><h3>Desenvolvedor</h3></div>
+          <div class="co">Grupo Aro de Contabilidade</div>
+          <p class="desc">Construí um sistema de gestão de documentos fiscais (estilo Arquivei/SIEG) em <span class="hl">Laravel</span>, usando Observers, Task Scheduling e Queues, com PostgreSQL e serviços de background em Python. Participei da conversão de um ERP legado em Delphi para <span class="hl">C# + ReactJS</span> e de um HelpDesk com chat em tempo real (Node.js + WebSocket).</p>
+        </div>
+      </article>
+
+      <article class="exp reveal" data-cat="trajetoria">
+        <div class="when">2021 — 2022</div>
+        <div class="body">
+          <div class="titleline"><h3>Desenvolvedor</h3></div>
+          <div class="co">ACX Experience</div>
+          <p class="desc">Montei pipelines <span class="hl">CI/CD</span> completos (GitHub e Bitbucket) com integração ao Jira e deploy automatizado. Criei uma automação em Python que recuperou <strong>4 milhões de arquivos fiscais (SAT)</strong> para uma rede de supermercados e desenvolvi dashboards analíticos integrados a ERP industrial.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= OPEN SOURCE & PROJETOS ================= -->
+<section class="band" id="projetos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">04</div>
+      <div class="htext">
+        <h2 class="section-title">Open Source &amp; <em>projetos próprios</em></h2>
+        <p>Eu não programo só no expediente. Mantenho dezenas de projetos públicos — de ferramentas de IA e dev tooling a segurança, dados e computação de alta performance.</p>
+      </div>
+    </div>
+
+    <div class="gh-banner reveal">
+      <div class="ghl">
+        <svg class="ghmark" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        <div class="meta"><b>github.com/jhonymiler</b><span>Código aberto desde sempre — autodidata, sempre construindo.</span></div>
+      </div>
+      <div class="ghcount">
+        <div class="c"><b>45+</b><span>repositórios</span></div>
+        <div class="c"><b>npm·PyPI</b><span>pacotes publicados</span></div>
+        <div class="c"><b>MIT</b><span>licença open</span></div>
+      </div>
+      <a class="ghbtn" href="https://github.com/jhonymiler" target="_blank" rel="noopener">Seguir no GitHub →</a>
+    </div>
+
+    <div class="proj-cat reveal">Open Source &amp; Dev Tooling</div>
+    <div class="proj-grid reveal">
+      <div class="card os-card">
+        <div class="toprow"><h4>Cortex</h4><span class="pill">v3.0 · IA Agents</span></div>
+        <div class="sub">Memória cognitiva para agentes LLM</div>
+        <p>Sistema de memória para agentes de IA inspirado no cérebro humano — modelo <span class="hl">W5H</span>, esquecimento de Ebbinghaus, repetição espaçada (SM-2), ranking híbrido RRF+MMR e um <span class="hl">Memory Firewall</span> que barra 90% das tentativas de manipulação. 100% de retenção de contexto nos benchmarks.</p>
+        <div class="repometa"><span class="lang"><span class="ld" style="background:#3572A5"></span>Python</span><span>FastAPI · Ollama · LangChain · CrewAI · MCP</span></div>
+        <div class="links">
+          <a href="https://github.com/jhonymiler/Cortex" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Repositório</a>
+        </div>
+      </div>
+      <div class="card os-card">
+        <div class="toprow"><h4>AXIS Framework</h4><span class="pill">npm · CLI v2.1</span></div>
+        <div class="sub">Infraestrutura de IA para projetos</div>
+        <p>CLI + skills de agente que estruturam a camada <code>.ai/</code> que um projeto precisa para trabalhar de forma confiável com <span class="hl">Claude Code, Cursor e Copilot</span>. Inclui o pipeline SPDD (Structured Prompt-Driven Development) e single-source-of-truth multi-IDE via symlinks.</p>
+        <div class="repometa"><span class="lang"><span class="ld" style="background:#f1e05a"></span>JavaScript</span><span>Node ≥18 · skills · hooks</span></div>
+        <div class="links">
+          <a href="https://github.com/jhonymiler/axis-bootstrap" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Repositório</a>
+          <a href="https://www.npmjs.com/package/@axis-bootstrap/cli" target="_blank" rel="noopener">📦 npm</a>
+        </div>
+      </div>
+      <div class="card os-card">
+        <div class="toprow"><h4>Bitbucket-MCP-Cloud</h4><span class="pill">PyPI · v1.3.7</span></div>
+        <div class="sub">Servidor MCP para Bitbucket Cloud</div>
+        <p>Servidor <span class="hl">Model Context Protocol</span> pronto para produção que cobre toda a API REST v2.0 do Bitbucket Cloud — 15 ferramentas, arquitetura limpa (SOLID), testes e CI/CD. Instalável via <code>uvx</code> e integrável ao Claude Desktop.</p>
+        <div class="repometa"><span class="lang"><span class="ld" style="background:#3572A5"></span>Python</span><span>FastMCP · Pydantic · async</span></div>
+        <div class="links">
+          <a href="https://github.com/jhonymiler/Bitbucket-MCP-Cloud" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Repositório</a>
+          <a href="https://pypi.org/project/bitbucket-mcp-cloud/" target="_blank" rel="noopener">📦 PyPI</a>
+        </div>
+      </div>
+      <div class="card os-card">
+        <div class="toprow"><h4>VaultZero</h4><span class="pill">Em evolução</span></div>
+        <div class="sub">Autenticação passwordless &amp; identidade soberana</div>
+        <p>Autenticação sem senha baseada em <span class="hl">blockchain P2P</span> com Self-Sovereign Identity (SSI). Monorepo completo: backend P2P, SDK de integração, app mobile em React Native e demo em Next.js.</p>
+        <div class="repometa"><span class="lang"><span class="ld" style="background:#3178c6"></span>TypeScript</span><span>Node · React Native · Next.js</span></div>
+        <div class="links">
+          <a href="https://github.com/jhonymiler/VaultZero" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Repositório</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-cat reveal">Inteligência Artificial</div>
+    <div class="proj-grid reveal">
+      <div class="card">
+        <div class="ct-row"><h4>PII-Tokenizer-To-AI</h4></div>
+        <div class="sub">Tokenização de dados sensíveis</div>
+        <p>Protege informações pessoais identificáveis (PII) em aplicações de IA, com criptografia e mascaramento de dados.</p>
+        <div class="tags"><span>Python</span><span>Cryptography</span><span>NLP</span><span>Data Privacy</span></div>
+      </div>
+      <div class="card">
+        <div class="ct-row"><h4>ScoreNews-IA</h4></div>
+        <div class="sub">Análise de sentimentos em notícias</div>
+        <p>Classifica e pontua grandes volumes de notícias usando Machine Learning e NLP para extrair relevância e sentimento.</p>
+        <div class="tags"><span>Python</span><span>TensorFlow</span><span>NLTK</span><span>Sentiment</span></div>
+      </div>
+      <div class="card">
+        <div class="ct-row"><h4>IA dos Impostos</h4></div>
+        <div class="sub">Automação fiscal inteligente</div>
+        <p>Automatiza cálculos fiscais identificando padrões em documentos, com integração a APIs governamentais.</p>
+        <div class="tags"><span>Python</span><span>OCR</span><span>Machine Learning</span><span>APIs Gov</span></div>
+      </div>
+    </div>
+
+    <div class="proj-cat reveal">Dados, Cripto &amp; Performance</div>
+    <div class="proj-grid reveal">
+      <div class="card os-card">
+        <div class="toprow"><h4>Prime Palindromic by Pi</h4></div>
+        <div class="sub">Computação de alta performance</div>
+        <p>No Desafio SigmaGeek, processei <span class="hl">6,6 bilhões de números/min</span> em Python para encontrar primos palindrômicos nas casas decimais do PI.</p>
+        <div class="links">
+          <a href="https://github.com/jhonymiler/Prime-Palindromic-by-Pi" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Repositório</a>
+        </div>
+      </div>
+      <div class="card os-card">
+        <div class="toprow"><h4>Análise Eleições · Lei de Benford</h4></div>
+        <div class="sub">Detecção estatística de fraude</div>
+        <p>Script que gera gráficos para detecção de anomalias com a <span class="hl">Lei de Benford</span> aplicada a dados eleitorais.</p>
+        <div class="links">
+          <a href="https://github.com/jhonymiler/analise-eleicoes-lei-benford" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Repositório</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ct-row"><h4>Bitcoin-PrivateKey-Hunter</h4></div>
+        <div class="sub">Pesquisa em segurança blockchain</div>
+        <p>Ferramenta de análise e auditoria de carteiras Bitcoin para fins educacionais e de pesquisa em segurança.</p>
+        <div class="tags"><span>Python</span><span>Bitcoin</span><span>Cryptography</span><span>Blockchain</span></div>
+      </div>
+      <div class="card">
+        <div class="ct-row"><h4>Puzzle BTC 2.0</h4></div>
+        <div class="sub">Desafios criptográficos</div>
+        <p>Resolve puzzles criptográficos do Bitcoin com computação paralela e algoritmos otimizados.</p>
+        <div class="tags"><span>Python</span><span>Parallel Computing</span><span>Cryptanalysis</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="band" id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">05</div>
+      <div class="htext">
+        <h2 class="section-title">Skills <em>técnicas</em></h2>
+      </div>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-group"><h4>Linguagens</h4><div class="pills"><span>Python</span><span>PHP 5.6/7/8</span><span>TypeScript</span><span>JavaScript</span><span>C#</span><span>C++</span></div></div>
+      <div class="skill-group"><h4>Backend &amp; Frameworks</h4><div class="pills"><span>Laravel</span><span>NestJS</span><span>AdonisJS</span><span>Node.js</span><span>FastAPI</span><span>Next.js</span><span>Vue.js</span></div></div>
+      <div class="skill-group"><h4>Frontend</h4><div class="pills"><span>ReactJS</span><span>Next.js</span><span>Vue.js</span><span>HTML5</span><span>CSS3</span><span>SASS</span></div></div>
+      <div class="skill-group"><h4>Inteligência Artificial</h4><div class="pills"><span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>LangChain</span><span>OpenAI (GPT-4)</span><span>MCP</span><span>OCR</span></div></div>
+      <div class="skill-group"><h4>Banco de Dados</h4><div class="pills"><span>MySQL</span><span>PostgreSQL</span><span>SQL Server</span><span>MongoDB</span><span>Redis</span><span>DynamoDB</span></div></div>
+      <div class="skill-group"><h4>Cloud &amp; Infra</h4><div class="pills"><span>AWS (SQS/Lambda/S3/EC2/RDS)</span><span>Docker</span><span>Serverless</span><span>Kubernetes/Rancher</span><span>Linux</span></div></div>
+      <div class="skill-group"><h4>Observabilidade</h4><div class="pills"><span>Datadog</span><span>Grafana</span><span>Prometheus</span><span>Logging estruturado</span><span>Alertas (Slack)</span></div></div>
+      <div class="skill-group"><h4>Padrões &amp; Arquitetura</h4><div class="pills"><span>Microsserviços</span><span>Event-Driven</span><span>Circuit Breaker</span><span>Strategy</span><span>Chain of Responsibility</span><span>Factory</span><span>Repository</span><span>DI</span><span>Retry/Backoff</span></div></div>
+      <div class="skill-group"><h4>Qualidade &amp; Processo</h4><div class="pills"><span>PEST</span><span>PHPUnit</span><span>Jest</span><span>ADRs / RFCs</span><span>Git Flow</span><span>CI/CD</span><span>Scrum &amp; Kanban</span></div></div>
+      <div class="skill-group"><h4>Web3 / Blockchain</h4><div class="pills"><span>Solidity</span><span>Smart Contracts</span><span>Ethereum</span><span>Web3</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LIDERANÇA ================= -->
+<section class="band" id="lideranca">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">06</div>
+      <div class="htext">
+        <h2 class="section-title">Liderança técnica &amp; <em>diferenciais</em></h2>
+      </div>
+    </div>
+    <div class="lead-grid reveal">
+      <div class="lead-cell">
+        <div class="n">→ 01</div>
+        <h4>Decisões que viram padrão</h4>
+        <p>Proponho e defendo ADRs e RFCs em ambiente corporativo. Decisões como a migração para arquitetura assíncrona e a escolha de banco para dados financeiros foram aprovadas pelo time de arquitetura — sempre com identificação proativa de gaps de segurança.</p>
+      </div>
+      <div class="lead-cell">
+        <div class="n">→ 02</div>
+        <h4>Observabilidade de verdade</h4>
+        <p>Dashboards de saúde das integrações, métricas de erro por dia/tipo/produto em Grafana + Prometheus e alertas automatizados no Slack. Eu não espero o cliente avisar que quebrou.</p>
+      </div>
+      <div class="lead-cell">
+        <div class="n">→ 03</div>
+        <h4>IA aplicada ao negócio</h4>
+        <p>Construo infraestrutura para agentes de IA — do framework <strong>AXIS</strong> (publicado no npm) ao <strong>Cortex</strong>, um sistema de memória cognitiva para LLMs. Também trabalho com MCP, LangChain e OpenAI (GPT-4), chatbots e processamento de documentos com OCR + ML. Levei o tema para dentro da empresa via Tech Talk.</p>
+      </div>
+      <div class="lead-cell">
+        <div class="n">→ 04</div>
+        <h4>Trânsito entre legado e moderno</h4>
+        <p>Navego sem atrito entre a stack legada (PHP/Laravel) e a moderna (Node.js/NestJS/TypeScript). Tenho até familiaridade com G-Code (CNC Router via Arduino) — porque curiosidade não tem fronteira.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FORMAÇÃO ================= -->
+<section class="band" id="formacao">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="num">07</div>
+      <div class="htext">
+        <h2 class="section-title">Formação &amp; <em>aprendizado contínuo</em></h2>
+      </div>
+    </div>
+    <div class="edu-grid">
+      <div class="edu reveal">
+        <div class="edu-item">
+          <h4>Bacharelado em Inteligência Artificial</h4>
+          <span class="yr">2024 — 2028 · cursando</span>
+          <div class="inst">Faculdade Anhanguera</div>
+          <p>Foco em Machine Learning, Deep Learning, NLP e sistemas inteligentes, com aplicação prática em projetos reais na Gran Cursos Online.</p>
+        </div>
+        <div class="edu-item">
+          <h4>Análise e Desenvolvimento de Sistemas</h4>
+          <span class="yr">concluído · 2023</span>
+          <div class="inst">Faculdade Anhanguera</div>
+          <p>Desenvolvimento de software, banco de dados, engenharia de software e arquitetura de sistemas.</p>
+        </div>
+        <div class="edu-item">
+          <h4>Técnico em Açúcar e Álcool · Técnico Florestal / Meio Ambiente</h4>
+          <span class="yr">2008 — 2010</span>
+          <div class="inst">Centro Paula Souza</div>
+        </div>
+      </div>
+      <div class="certs reveal">
+        <h4 class="cap">Certificações &amp; cursos</h4>
+        <div class="cert"><span class="tick">✓</span><div class="ct"><b>Machine Learning &amp; AI Specialization</b><br><span class="src">Coursera / Stanford University · 2024</span></div></div>
+        <div class="cert"><span class="tick">✓</span><div class="ct"><b>Python for Data Science and AI</b><br><span class="src">IBM / Coursera · 2024</span></div></div>
+        <div class="cert"><span class="tick">✓</span><div class="ct"><b>AWS Cloud Practitioner</b><br><span class="src">Amazon Web Services · 2023</span></div></div>
+        <div class="cert"><span class="tick">✓</span><div class="ct"><b>NestJS &amp; TypeScript</b><br><span class="src">formação contínua aplicada em microsserviços reais · 2025</span></div></div>
+        <div class="cert"><span class="tick">✓</span><div class="ct"><b>Formação DBA SQL Server 2019</b><br><span class="src">Udemy · exames 70-761, 70-762, 70-764</span></div></div>
+        <div class="cert"><span class="tick">✓</span><div class="ct"><b>Autodidata desde sempre (2001+)</b><br><span class="src">foco atual: IA, MCP e agentes inteligentes</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section class="contact" id="contato">
+  <div class="wrap">
+    <div class="section-label reveal">08 — Vamos conversar</div>
+    <h2 class="reveal">Tem um sistema crítico que <em>ninguém quer tocar?</em></h2>
+    <p class="reveal">É exatamente aí que eu faço diferença. Se você precisa de alguém que entenda a regra de negócio, arquitete a solução certa e entregue software que aguenta dinheiro de verdade — vamos conversar.</p>
+    <div class="contact-cta reveal">
+      <a class="btn btn-dark-primary" href="mailto:jonatasmiler@gmail.com">Falar comigo <span class="arr">→</span></a>
+      <a class="btn btn-dark" href="https://linkedin.com/in/jhonymiler" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-dark" href="https://github.com/jhonymiler" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <span>© 2026 Jonatas Miler · Engenheiro de Software Sênior</span>
+  <div class="fl">
+    <a href="mailto:jonatasmiler@gmail.com">jonatasmiler@gmail.com</a>
+    <a href="https://linkedin.com/in/jhonymiler" target="_blank" rel="noopener">linkedin.com/in/jhonymiler</a>
+    <a href="https://github.com/jhonymiler" target="_blank" rel="noopener">github.com/jhonymiler</a>
+  </div>
+</footer>
+
+<!-- tweaks mount -->
+<div id="tweaks-root"></div>
+
+<script>
+/* ============================================================
+   Jonatas Miler — portfólio behavior
+   ============================================================ */
+(function () {
+  'use strict';
+
+  /* ---------- sticky nav state ---------- */
+  var nav = document.getElementById('nav');
+  function onScroll() {
+    if (window.scrollY > 20) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------- mobile menu ---------- */
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navlinks');
+  if (toggle) {
+    toggle.addEventListener('click', function () { links.classList.toggle('open'); });
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') links.classList.remove('open');
+    });
+  }
+
+  /* ---------- active link on scroll (scrollspy) ---------- */
+  var navAnchors = Array.prototype.slice.call(document.querySelectorAll('nav.links a'));
+  var sections = navAnchors
+    .map(function (a) { return document.querySelector(a.getAttribute('href')); })
+    .filter(Boolean);
+  var spy = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) {
+        var id = en.target.id;
+        navAnchors.forEach(function (a) {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+  sections.forEach(function (s) { spy.observe(s); });
+
+  /* ---------- reveal on scroll ---------- */
+  var revealObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) {
+        en.target.classList.add('in');
+        revealObs.unobserve(en.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+  document.querySelectorAll('.reveal').forEach(function (el) { revealObs.observe(el); });
+
+  /* ---------- rotator (hero role word) ---------- */
+  var rotator = document.getElementById('rotator');
+  if (rotator) {
+    var track = rotator.querySelector('.track');
+    var items = track.children.length; // includes clone of first
+    var idx = 0;
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduced) {
+      setInterval(function () {
+        idx++;
+        track.style.transition = 'transform .6s cubic-bezier(.7,0,.2,1)';
+        track.style.transform = 'translateY(-' + (idx * 1.25) + 'em)';
+        if (idx === items - 1) {
+          setTimeout(function () {
+            track.style.transition = 'none';
+            idx = 0;
+            track.style.transform = 'translateY(0)';
+          }, 640);
+        }
+      }, 2400);
+    }
+  }
+
+  /* ---------- count-up stats ---------- */
+  function animateCount(el) {
+    var to = parseFloat(el.getAttribute('data-to'));
+    var dec = parseInt(el.getAttribute('data-dec') || '0', 10);
+    var suffix = el.getAttribute('data-suffix') || '';
+    var dur = 1500;
+    var start = performance.now();
+    function frame(now) {
+      var p = Math.min((now - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = to * eased;
+      var txt = dec > 0
+        ? val.toFixed(dec).replace('.', ',')
+        : Math.round(val).toString();
+      el.textContent = txt + suffix;
+      if (p < 1) requestAnimationFrame(frame);
+      else el.textContent = (dec > 0 ? to.toFixed(dec).replace('.', ',') : to) + suffix;
+    }
+    requestAnimationFrame(frame);
+  }
+  var statGrid = document.getElementById('statGrid');
+  if (statGrid) {
+    var counted = false;
+    var countObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting && !counted) {
+          counted = true;
+          statGrid.querySelectorAll('[data-to]').forEach(animateCount);
+        }
+      });
+    }, { threshold: 0.3 });
+    countObs.observe(statGrid);
+  }
+
+  /* ---------- experience filters ---------- */
+  var filters = document.getElementById('expFilters');
+  if (filters) {
+    var cards = Array.prototype.slice.call(document.querySelectorAll('#timeline .exp'));
+    filters.addEventListener('click', function (e) {
+      var btn = e.target.closest('.chip');
+      if (!btn) return;
+      filters.querySelectorAll('.chip').forEach(function (c) { c.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.getAttribute('data-filter');
+      cards.forEach(function (card) {
+        var cats = (card.getAttribute('data-cat') || '').split(' ');
+        var show = f === 'all' || cats.indexOf(f) !== -1;
+        card.classList.toggle('hide', !show);
+      });
+    });
+  }
+})();
+</script>
+
+<!-- Tweaks panel (React) -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+/* Tweaks app — applies design controls to the plain-HTML document. */
+const { useTweaks, TweaksPanel, TweakSection, TweakColor, TweakRadio,
+        TweakSlider, TweakToggle } = window;
+
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accent": "#6a52c9",
+  "theme": "dark",
+  "density": "comfy",
+  "baseSize": 20,
+  "italicAccent": true
+}/*EDITMODE-END*/;
+
+const ACCENTS = ["#1c6b54", "#b0512f", "#2a5db0", "#6a52c9", "#1b1813"];
+
+function TweaksApp() {
+  const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+  const root = document.documentElement;
+
+  React.useEffect(() => { root.style.setProperty('--accent', t.accent); }, [t.accent]);
+  React.useEffect(() => { root.setAttribute('data-theme', t.theme); }, [t.theme]);
+  React.useEffect(() => { root.setAttribute('data-density', t.density); }, [t.density]);
+  React.useEffect(() => { root.style.setProperty('--base-size', t.baseSize + 'px'); }, [t.baseSize]);
+  React.useEffect(() => {
+    document.querySelectorAll('.section-title em, .contact h2 em').forEach((el) => {
+      el.style.fontStyle = t.italicAccent ? 'italic' : 'normal';
+    });
+  }, [t.italicAccent]);
+
+  return (
+    <TweaksPanel title="Tweaks">
+      <TweakSection label="Cor & tema" />
+      <TweakColor label="Acento" value={t.accent} options={ACCENTS}
+        onChange={(v) => setTweak('accent', v)} />
+      <TweakRadio label="Tema" value={t.theme} options={['light', 'dark']}
+        onChange={(v) => setTweak('theme', v)} />
+      <TweakSection label="Tipografia & ritmo" />
+      <TweakSlider label="Corpo do texto" value={t.baseSize} min={16} max={21} step={1} unit="px"
+        onChange={(v) => setTweak('baseSize', v)} />
+      <TweakRadio label="Densidade" value={t.density} options={['compact', 'regular', 'comfy']}
+        onChange={(v) => setTweak('density', v)} />
+      <TweakToggle label="Destaque em itálico" value={t.italicAccent}
+        onChange={(v) => setTweak('italicAccent', v)} />
+    </TweaksPanel>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<TweaksApp />);
+</script>
 
 </body>
 </html>
-
-
